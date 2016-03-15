@@ -1,6 +1,6 @@
 module "network" {
   source = "../network/"
-  environment = "${var.env}"
+  environment = "${var.environment}"
   region = "${var.region}"
 }
 

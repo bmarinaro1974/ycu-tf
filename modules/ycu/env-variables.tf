@@ -122,3 +122,29 @@ variable "instance_tenancy" {
   }
 }
 
+
+variable "domain" {
+  type = "map"
+  default = {
+    dev1="app.yourcareuniverse.net"
+    dev2=""
+    dev3=""
+    dev4=""
+    qa1=""
+    qa2=""
+    qa3=""
+    qa4=""
+    stage=""
+    prod=""
+  }
+}
+
+variable "roles" {
+  type = "map"
+  default = {
+    YCE-Services="microservice-yce-services"
+    
+  }
+}
+
+

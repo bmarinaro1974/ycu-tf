@@ -3,16 +3,16 @@ resource "aws_vpc" "ycu" {
   instance_tenancy = "${lookup(var.instance_tenancy, var.env)}"
 
   tags{
-    Name="${var.env}-vpc-ycu"
-    Environment="${var.env}"
+    Name="${var.environment}-vpc-ycu"
+    Environment="${var.environment}"
   }
 }
 
 resource "aws_internet_gateway" "ycu" {
   vpc_id = "${aws_vpc.ycu.id}"
   tags{
-    Name="${var.env}-igw-ycu"
-    Environment="${var.env}"
+    Name="${var.environment}-igw-ycu"
+    Environment="${var.environment}"
   }
 }
 
@@ -42,8 +42,16 @@ resource "aws_main_route_table_association" "ycu" {
 }
 
 resource "aws_route53_zone" "ycu" {
-  name = "${var.env}.yourcareuniverse.net"
-  vpc_id = "${aws_vpc.ycu.id}"
+  name = "${var.environment}.yourcareuniverse.net"
+
+  tags {
+    Name = "${var.environment}.yourcareuniverse.net"
+    Environment = "${var.environment}"
+  }
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "template_file" "log_policy" {
@@ -55,7 +63,7 @@ resource "template_file" "log_policy" {
 }
 
 resource "aws_s3_bucket" "log" {
-  bucket = "${var.env}-ycu-vpc-log-bucket"
+  bucket = "${var.environment}-ycu-vpc-log-bucket"
   acl = "log-delivery-write"
   policy = "${template_file.log_policy.rendered}"
 }
