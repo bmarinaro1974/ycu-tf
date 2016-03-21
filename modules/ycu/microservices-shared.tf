@@ -1,5 +1,5 @@
 resource "aws_security_group" "microservices" {
-  name = "${var.environment_name}-microservices"
+  name = "${var.environment}-microservices"
 
   ingress {
     from_port = 0
@@ -66,12 +66,12 @@ resource "aws_security_group" "microservices" {
     cidr_blocks = ["10.17.11.0/26"]
   }
 
-  ingress {
-    from_port = 8300
-    to_port = 8302
-    protocol = "tcp"
-    cidr_blocks = ["${var.vpc_application.cidr_block}"]
-  }
+  #ingress {
+  #  from_port = 8300
+  #  to_port = 8302
+  #  protocol = "tcp"
+  #  cidr_blocks = ["${var.env_cidr_block}"]
+  #}
 
   egress {
     from_port = 0
@@ -80,10 +80,10 @@ resource "aws_security_group" "microservices" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  vpc_id = "${aws_vpc.services.id}"
+  vpc_id = "${aws_vpc.ycu.id}"
   tags {
-    Name        = "${var.environment_name}-microservices"
-    Environment = "${var.environment_name}"
+    Name        = "${var.environment}-microservices"
+    Environment = "${var.environment}"
   }
 }
 
@@ -92,15 +92,15 @@ resource "template_file" "microservices_policy" {
   template = "${file("${path.module}/microservices-policy.json")}"
 
   vars {
-    chef_boot_bucket = "${var.chef_boot_bucket}"
-    chef_config_bucket = "${var.chef_config_bucket}"
-    consul_bucket = "${var.consul_bucket}"
-    elasticsearch_boot_bucket = "${var.elasticsearch_boot_bucket}"
+    chef_boot_bucket_arn = "arn:aws:s3:::${var.chef_boot_bucket}"
+    chef_config_bucket_arn = "arn:aws:s3:::${var.chef_config_bucket}"
+    consul_bucket_arn = "arn:aws:s3:::${var.consul_bucket}"
+    elasticsearch_boot_bucket_arn = "arn:aws:s3:::${var.elasticsearch_boot_bucket}"
   }
 }
 
 resource "aws_iam_role" "microservices" {
-  name = "${var.environment_name}-microservices"
+  name = "${var.environment}-microservices"
   assume_role_policy = "${file("${path.module}/assume-role-policy.json")}"
 }
 
@@ -111,6 +111,6 @@ resource "aws_iam_role_policy" "microservices" {
 }
 
 resource "aws_iam_instance_profile" "microservices_profile" {
-  name = "${var.environment_name}-microservices-profile"
+  name = "${var.environment}-microservices-profile"
   roles = ["${aws_iam_role.microservices.name}"]
 }

@@ -12,7 +12,7 @@ variable "region" {
 variable "zones" {
   type = "map"
   default = {
-    us-east-1 = "us-east-1a,us-east-1d,us-east-1e"
+    us-east-1 = "us-east-1b,us-east-1d,us-east-1e"
     us-west-1 = "us-west-1a,us-west-1b,us-west-1c"
     us-west-2 = "us-west-2a,us-west-2b,us-west-2c"
   }
@@ -88,6 +88,49 @@ variable "default_asg_max" {
   }
 }
 
+variable "default_asg_desired" {
+  type = "map"
+  default = {
+    dev1="1"
+    dev2="1"
+    dev3="1"
+    dev4="1"
+    qa1="1"
+    qa2="1"
+    qa3="1"
+    qa4="1"
+    stage="1"
+    prod="1"
+  }
+}
+
+variable "default_asg_health_check_period" {
+  type = "string"
+  default = "300"
+}
+
+variable "default_asg_health_check_type" {
+  type = "string"
+  default = "EC2"
+}
+
+variable "chef_boot_bucket" {
+  type = "string"
+}
+
+variable "chef_config_bucket" {
+  type = "string"
+}
+
+variable "consul_bucket" {
+  type = "string"
+}
+
+variable "elasticsearch_boot_bucket" {
+  type = "string"
+}
+
+
 #fix this up later
 
 variable "default_instance_types" {
@@ -143,7 +186,7 @@ variable "roles" {
   type = "map"
   default = {
     YCE-Services="microservice-yce-services"
-    
+
   }
 }
 

@@ -1,0 +1,19 @@
+{
+  "Id": "AllowELBLogsPolicy",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowELBLogsPolicyStatement",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "${log_bucket_arn}/elb/*",
+      "Principal": {
+        "AWS": [
+          "${elb_logging_arn}"
+        ]
+      }
+    }
+  ]
+}

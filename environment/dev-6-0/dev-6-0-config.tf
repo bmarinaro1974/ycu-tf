@@ -1,4 +1,4 @@
-vvariable "environment" {
+variable "environment" {
   type = "string"
   default = "dev1"
 }
@@ -10,7 +10,7 @@ variable "region" {
 
 variable "instance_key_name" {
   type = "string"
-  default = "terraform-ycu"
+  default = "terraform-ycu-baa"
 }
 
 variable "chef_boot_bucket" {

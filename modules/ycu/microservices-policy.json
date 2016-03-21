@@ -22,14 +22,14 @@
         "s3:Get"
       ],
       "Resource": [
-        "arn:aws:s3:::${chef_boot_bucket}/*",
-        "arn:aws:s3:::${chef_boot_bucket}",
-        "arn:aws:s3:::${chef_config_bucket}/*",
-        "arn:aws:s3:::${chef_config_bucket}",
-        "arn:aws:s3:::${elasticsearch_boot_bucket}/*",
-        "arn:aws:s3:::${elasticsearch_boot_bucket}",
-        "arn:aws:s3:::${consul_bucket}/*",
-        "arn:aws:s3:::${consul_bucket}"
+        "${chef_boot_bucket_arn}/*",
+        "${chef_boot_bucket_arn}",
+        "${chef_config_bucket_arn}/*",
+        "${chef_config_bucket_arn}",
+        "${elasticsearch_boot_bucket_arn}/*",
+        "${elasticsearch_boot_bucket_arn}",
+        "${consul_bucket_arn}/*",
+        "${consul_bucket_arn}"
       ],
       "Effect": "Allow"
     }

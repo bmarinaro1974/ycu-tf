@@ -36,7 +36,7 @@ module "region_cidr_block" {
 
 variable "env_cidr_newnums" {
   type = "string"
-  default = "dev60,dev70,qa60,qa70,staging,demo,prod"
+  default = "dev1,dev2,dev3,dev4,qa1,qa2,qa3,qa4,stage,prod"
   # because I have a /16 once I'm done with env_cidr_block below,
   # i can set up to 64 values in each region the default value list above
 }
