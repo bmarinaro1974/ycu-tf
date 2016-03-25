@@ -12,66 +12,60 @@ resource "aws_security_group" "microservices" {
     from_port = 0
     to_port = 0
     protocol = "-1"
-    cidr_blocks = ["10.50.1.0/24"]
+    cidr_blocks = ["${var.admin_cidr_block}"]
   }
 
   ingress {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks = ["192.168.2.0/24"]
+    cidr_blocks = ["${var.workspaces_cidr_block}"]
   }
 
   ingress {
     from_port = 443
     to_port = 443
     protocol = "tcp"
-    cidr_blocks = ["10.27.11.0/26"]
+    security_groups = ["${aws_security_group.YCR.id}"]
   }
   ingress {
     from_port = 443
     to_port = 443
     protocol = "tcp"
-    cidr_blocks = ["10.27.12.0/26"]
-  }
-  ingress {
-    from_port = 443
-    to_port = 443
-    protocol = "tcp"
-    cidr_blocks = ["192.168.2.0/24"]
+    cidr_blocks = ["${var.workspaces_cidr_block}"]
   }
 
   ingress {
     from_port = 4700
     to_port = 4799
     protocol = "tcp"
-    cidr_blocks = ["10.17.10.64/26"]
+    security_groups = ["${aws_security_group.YCU-Direct.id}"]
   }
   ingress {
     from_port = 4700
     to_port = 4799
     protocol = "tcp"
-    cidr_blocks = ["10.17.12.128/26"]
+    security_groups = ["${aws_security_group.HAProxy.id}"]
   }
   ingress {
     from_port = 4700
     to_port = 4799
     protocol = "tcp"
-    cidr_blocks = ["10.17.10.192/26"]
+    security_groups = ["${aws_security_group.YCH-CM.id}"]
   }
   ingress {
     from_port = 4700
     to_port = 4799
     protocol = "tcp"
-    cidr_blocks = ["10.17.11.0/26"]
+    security_groups = ["${aws_security_group.YCR.id}"]
   }
 
-  #ingress {
-  #  from_port = 8300
-  #  to_port = 8302
-  #  protocol = "tcp"
-  #  cidr_blocks = ["${var.env_cidr_block}"]
-  #}
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "tcp"
+    cidr_blocks = ["${var.svc_cidr_block}"]
+  }
 
   egress {
     from_port = 0
@@ -83,6 +77,129 @@ resource "aws_security_group" "microservices" {
   vpc_id = "${aws_vpc.ycu.id}"
   tags {
     Name        = "${var.environment}-microservices"
+    Environment = "${var.environment}"
+  }
+}
+
+
+resource "aws_security_group" "consul-enabled" {
+  name = "${var.environment}-consul-enabled"
+
+
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.Logstash.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.YCU-Direct.id}"]]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.YCH-CM.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.YCR.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.Spago.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.HAProxy.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.MS.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.Consul.id}"]
+  }
+  ingress {
+    from_port = 8300
+    to_port = 8302
+    protocol = "udp"
+    security_groups = ["${aws_security_group.OpenEMPI.id}"]
+  }
+
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.Logstash.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.YCU-Direct.id}"]]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.YCH-CM.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.YCR.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.Spago.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.HAProxy.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.MS.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.Consul.id}"]
+  }
+  ingress {
+    from_port = 8301
+    to_port = 8301
+    protocol = "tcp"
+    security_groups = ["${aws_security_group.OpenEMPI.id}"]
+  }
+
+
+  vpc_id = "${aws_vpc.ycu.id}"
+  tags {
+    Name        = "${var.environment}-consul-enabled"
     Environment = "${var.environment}"
   }
 }

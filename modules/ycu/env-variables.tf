@@ -190,4 +190,14 @@ variable "roles" {
   }
 }
 
+variable "admin_cidr_block" {
+  type = "string"
+  default = "10.50.1.0/24"
+}
+
+variable "workspaces_cidr_block" {
+  type = "string"
+  default = "192.168.2.0/24"
+}
+
 
