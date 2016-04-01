@@ -186,6 +186,7 @@ variable "roles" {
   type = "map"
   default = {
     YCE-Services="microservice-yce-services"
+    Swagger-UI="microservice-swagger-ui"
 
   }
 }
