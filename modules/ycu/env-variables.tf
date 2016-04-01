@@ -187,7 +187,8 @@ variable "roles" {
   default = {
     YCE-Services="microservice-yce-services"
     Swagger-UI="microservice-swagger-ui"
-
+    YCI-50="microservice-yci-50"
+    Notification="microservice-notification"
   }
 }
 
