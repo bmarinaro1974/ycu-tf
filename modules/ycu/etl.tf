@@ -49,7 +49,7 @@ resource "template_file" "ETL_user_data" {
   }
 }
 
-resource "aws_security_group" "ETL_security_group" {
+resource "aws_security_group" "ETL" {
     name = "${var.environment_name}-ETL"
 
     ingress {
@@ -105,7 +105,7 @@ resource "aws_launch_configuration" "ETL_configuration" {
   image_id              = "${coalesce(lookup(var.ETL_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
   instance_type         = "${coalesce(lookup(var.ETL_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"
   key_name              = "${var.instance_key_name}"
-  security_groups       = ["${aws_security_group.ETL_security_group.id}", "${aws_security_group.consul-enabled.id}"]
+  security_groups       = ["${aws_security_group.ETL.id}", "${aws_security_group.consul-enabled.id}"]
   iam_instance_profile  = "${aws_iam_instance_profile.microservices_profile.name}"
   user_data             = "${template_file.ETL_user_data.rendered}"
 }

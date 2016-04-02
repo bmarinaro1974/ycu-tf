@@ -227,4 +227,33 @@ variable "workspaces_cidr_block" {
   default = "192.168.2.0/24"
 }
 
+##############################################
+# Mystery cidr blocks (named after planets in order of appearence)
+###########################################
+variable "mercury_cidr_block" {
+  type = "string"
+  default = "10.13.10.0/25"
+}
+
+variable "venus_cidr_block" {
+  type = "string"
+  default = "10.17.10.0/24"
+}
+
+variable "earth_cidr_block" {
+  type = "string"
+  default = "10.27.10.0/24"
+}
+
+variable "mars_cidr_block" {
+  type = "string"
+  default = "10.32.10.0/24"
+}
+
+variable "jupiter_cidr_block" {
+  type = "string"
+  default = "10.12.10.0/25"
+}
+
+
 

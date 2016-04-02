@@ -9,14 +9,7 @@ route53-config.tf:    name = "${aws_elb.Elasticsearch_elb.dns_name}"
 route53-config.tf:    zone_id = "${aws_elb.Elasticsearch_elb.zone_id}"
 route53-variables.tf:variable "dns_elb_Elasticsearch" {
 route53-variables.tf:        record = "dev-6-0-Elasticsearch-elb.app"
-security_groups-config.tf:        security_groups = ["${aws_security_group.Elasticsearch_security_group.id}"]
-security_groups-config.tf:resource "aws_security_group" "Elasticsearch_elb_security_group" {
-security_groups-config.tf:    name = "${var.environment_name}-Elasticsearch-elb"
-security_groups-config.tf:        Name        = "${var.environment_name}-Elasticsearch-elb"
-security_groups-config.tf:resource "aws_security_group" "Elasticsearch_security_group" {
-security_groups-config.tf:    name = "${var.environment_name}-Elasticsearch"
-security_groups-config.tf:       security_groups = ["${aws_security_group.Elasticsearch_elb_security_group.id}"]
-security_groups-config.tf:        Name        = "${var.environment_name}-Elasticsearch"
+
 variable "Elasticsearch_ami_ids" {
   description = ""
   type        = "map"
@@ -101,17 +94,13 @@ s  #depends_on = ["aws_route.services_admin"]
     propagate_at_launch = true
   }
 }
-Non-matching grp Elasticsearch
-
-[	security_groups = ["${aws_security_group.microservices_security_group.id}", "${aws_security_group.consul-enabled-services_security_group.id}"]]
-[	security_groups = ["${aws_security_group.XXX_security_group.id}"]]
 
 resource "aws_launch_configuration" "Elasticsearch_configuration" {
   name                  = "${var.environment}_Elasticsearch"
   image_id              = "${coalesce(lookup(var.Elasticsearch_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
   instance_type         = "${coalesce(lookup(var.Elasticsearch_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"
   key_name              = "${var.instance_key_name}"
-  security_groups       = ["${aws_security_group.microservices.id}"]
+  security_groups       = ["${aws_security_group.elasticsearch.id}"]
   iam_instance_profile  = "${aws_iam_instance_profile.microservices_profile.name}"
   user_data             = "${template_file.Elasticsearch_user_data.rendered}"
 }
