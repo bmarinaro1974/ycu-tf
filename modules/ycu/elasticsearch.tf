@@ -1,15 +1,3 @@
-elb-config.tf:resource "aws_elb" "Elasticsearch_elb" {
-elb-config.tf:  name = "${var.environment_name}-Elasticsearch"
-elb-config.tf:  security_groups = ["${aws_security_group.Elasticsearch_elb_security_group.id}"]
-elb-config.tf:    Name = "${var.environment_name}-Elasticsearch"
-route53-config.tf:resource "aws_route53_record" "Elasticsearch-elb" {
-route53-config.tf:  name = "${var.dns_elb_Elasticsearch.record}"
-route53-config.tf:  type = "${var.dns_elb_Elasticsearch.type}"
-route53-config.tf:    name = "${aws_elb.Elasticsearch_elb.dns_name}"
-route53-config.tf:    zone_id = "${aws_elb.Elasticsearch_elb.zone_id}"
-route53-variables.tf:variable "dns_elb_Elasticsearch" {
-route53-variables.tf:        record = "dev-6-0-Elasticsearch-elb.app"
-
 variable "Elasticsearch_ami_ids" {
   description = ""
   type        = "map"
@@ -61,24 +49,92 @@ resource "template_file" "Elasticsearch_user_data" {
   }
 }
 
-Non-matching grp Elasticsearch
+resource "aws_security_group" "Elasticsearch" {
+    name = "${var.environment_name}-Elasticsearch"
 
-[  depends_on = ["aws_internet_gateway.services"] ]
-[  depends_on = ["aws_internet_gateway.application"] ]
+    ingress {
+      from_port = 0
+      to_port = 0
+      protocol = "-1"
+      self = "true"
+    }
+   
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       security_groups = ["${aws_security_group.Elasticsearch_elb.id}"]
+   }
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       security_groups = ["${aws_security_group.logstash.id}"]
+   }
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       cidr_blocks = ["${var.venus_cidr_block}"]
+ 
+   }
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       cidr_blocks = ["${var.earth_cidr_block}"]
+ 
+   }
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       cidr_blocks = ["${var.mars_cidr_block}"]
+ 
+   }
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       cidr_blocks = ["${var.workspaces_cidr_block}"]
+ 
+   }
+   ingress {
+       from_port = 9200
+       to_port = 9300
+       protocol = "tcp"
+       cidr_blocks = ["${var.jupiter_cidr_block}"]
+ 
+   }
 
-[  depends_on = ["aws_route.services_admin"]]
-[  depends_on = ["aws_route.application_admin"]]
+   ingress {
+      from_port = 22
+      to_port = 22
+      protocol = "tcp"
+      cidr_blocks = ["${var.workspaces_cidr_block}"]
+    }
 
-[  vpc_zone_identifier = ["${aws_subnet.services-subnet-A.id}", "${aws_subnet.services-subnet-C.id}", "${aws_subnet.services-subnet-D.id}", "${aws_subnet.services-subnet-E.id}"]]
-[  vpc_zone_identifier = ["${aws_subnet.application-subnet-A.id}", "${aws_subnet.application-subnet-C.id}", "${aws_subnet.application-subnet-D.id}", "${aws_subnet.application-subnet-E.id}"]]
+    egress {
+        from_port = 0
+        to_port = 0
+        protocol = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
 
-[  [ load balancer here ]]
-[  load_balancers = ["${aws_elb.XXX_elb.name}"]]
+    ### XXX: application VPC
+    #vpc_id = "${aws_vpc.application.id}"
+    vpc_id = "${aws_vpc.ycu.id}"
+
+    tags {
+        Name        = "${var.environment_name}-Elasticsearch"
+        Environment = "${var.environment_name}"
+    }
+}
 
 resource "aws_autoscaling_group" "Elasticsearch_group" {
   depends_on = ["aws_internet_gateway.ycu"]
 s  #depends_on = ["aws_route.services_admin"]
-  vpc_zone_identifier = ["${aws_subnet.services.*.id}"]
+  vpc_zone_identifier = ["${aws_subnet.applications.*.id}"]
   name = "${var.environment}_YCU_Elasticsearch"
   max_size = "${lookup(var.default_asg_max, var.environment)}"
   min_size = "${lookup(var.default_asg_min, var.environment)}"
@@ -87,6 +143,7 @@ s  #depends_on = ["aws_route.services_admin"]
   desired_capacity = "${lookup(var.default_asg_desired, var.environment)}"
   force_delete = true
   launch_configuration = "${aws_launch_configuration.Elasticsearch_configuration.id}"
+  load_balancers = ["${aws_elb.Elasticsearch_elb.name}"]
 
   tag {
     key = "Name"
