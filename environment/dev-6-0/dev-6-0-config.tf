@@ -33,6 +33,13 @@ variable "elasticsearch_boot_bucket" {
   default = "ycu-elasticsearch-boot"
 }
 
+#XXX: Should this be hardcoded?!
+variable "existing_route53_zones" {
+    default = {
+        yourcareuniverse_net_id = "Z2HGIVTRS9JXLL"
+		yourcareeverywhere_com_id = "Z15KESN5Q6FJW9"
+    }
+}
 
 provider "aws" {
   allowed_account_ids = ["${var.provider_primary.account}"]

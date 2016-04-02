@@ -227,6 +227,19 @@ variable "workspaces_cidr_block" {
   default = "192.168.2.0/24"
 }
 
+variable "elb_certs" {
+    default = {
+        Consul-HAProxy = "arn:aws:iam::678104714502:server-certificate/apiYourCareUniverseNet"
+        ProdPublicCM = "arn:aws:iam::678104714502:server-certificate/ELBProdPublicDirect"
+        YCR = "arn:aws:iam::678104714502:server-certificate/ycrBAAYourCareUniverseNet"
+        YCU-Direct = "arn:aws:iam::678104714502:server-certificate/ELBProdPublicDirect"
+        YCH-OpenEMPI = "arn:aws:iam::678104714502:server-certificate/ELBProdBaaOpenEMPI2016"
+        Spago = "arn:aws:iam::678104714502:server-certificate/ELBProdPublicSpagoBI"
+        Reporting = "arn:aws:iam::678104714502:server-certificate/ycureportingYourCareUniverseNet"
+        developmentCertificate = "arn:aws:iam::678104714502:server-certificate/wcDevYourCareUniverseNet"
+    }
+}
+
 ##############################################
 # Mystery cidr blocks (named after planets in order of appearence)
 ###########################################
@@ -238,6 +251,11 @@ variable "mercury_cidr_block" {
 variable "venus_cidr_block" {
   type = "string"
   default = "10.17.10.0/24"
+}
+
+variable "venus_prime_cidr_block" {
+  type = "string"
+  default = "10.17.10.0/16"
 }
 
 variable "earth_cidr_block" {
@@ -253,6 +271,16 @@ variable "mars_cidr_block" {
 variable "jupiter_cidr_block" {
   type = "string"
   default = "10.12.10.0/25"
+}
+
+variable "saturn_cidr_block" {
+  type = "string"
+  default = "10.37.11.0/26"
+}
+
+variable "neptune_cidr_block" {
+  type = "string"
+  default = "10.37.11.192/26"
 }
 
 
