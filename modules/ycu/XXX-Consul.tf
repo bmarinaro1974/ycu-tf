@@ -76,60 +76,35 @@ Non-matching grp Consul
 [  depends_on = ["aws_internet_gateway.services"] ]
 [  depends_on = ["aws_internet_gateway.application"] ]
 
-[  depends_on = ["aws_autoscaling_group.Consul_group"] ]
+[  depends_on = ["aws_route.services_admin"]]
 [  depends_on = ["aws_route.application_admin"]]
 
-[  depends_on = ["aws_route.services_admin"]]
+[  vpc_zone_identifier = ["${aws_subnet.services-subnet-A.id}", "${aws_subnet.services-subnet-C.id}", "${aws_subnet.services-subnet-D.id}", "${aws_subnet.services-subnet-E.id}"]]
 [  vpc_zone_identifier = ["${aws_subnet.application-subnet-A.id}", "${aws_subnet.application-subnet-C.id}", "${aws_subnet.application-subnet-D.id}", "${aws_subnet.application-subnet-E.id}"]]
 
-[  vpc_zone_identifier = ["${aws_subnet.services-subnet-A.id}", "${aws_subnet.services-subnet-C.id}", "${aws_subnet.services-subnet-D.id}", "${aws_subnet.services-subnet-E.id}"]]
-[  name = "${var.environment_name}_YCU_XXX"]
+resource "aws_autoscaling_group" "Consul_group" {
+  depends_on = ["aws_internet_gateway.ycu"]
+s  #depends_on = ["aws_route.services_admin"]
+  vpc_zone_identifier = ["${aws_subnet.services.*.id}"]
+  name = "${var.environment}_YCU_Consul"
+  max_size = "${lookup(var.default_asg_max, var.environment)}"
+  min_size = "${lookup(var.default_asg_min, var.environment)}"
+  health_check_grace_period = "${var.default_asg_health_check_period}"
+  health_check_type = "${var.default_asg_health_check_type}"
+  desired_capacity = "${lookup(var.default_asg_desired, var.environment)}"
+  force_delete = true
+  launch_configuration = "${aws_launch_configuration.Consul_configuration.id}"
 
-[  name = "${var.environment_name}_YCU_XXX"]
-[  max_size = "${var.XXX_group.max_size}"]
-
-[  max_size = "${var.XXX_group.max_size}"]
-[  min_size = "${var.XXX_group.min_size}"]
-
-[  min_size = "${var.XXX_group.min_size}"]
-[  health_check_grace_period = "${var.XXX_group.health_check_grace_period}"]
-
-[  health_check_grace_period = "${var.XXX_group.health_check_grace_period}"]
-[  health_check_type = "${var.XXX_group.health_check_type}"]
-
-[  health_check_type = "${var.XXX_group.health_check_type}"]
-[  desired_capacity = "${var.XXX_group.desired_size}"]
-
-[  desired_capacity = "${var.XXX_group.desired_size}"]
-[  force_delete = true]
-
-[  force_delete = true]
-[  launch_configuration = "${aws_launch_configuration.XXX_configuration.id}"]
-
-[  launch_configuration = "${aws_launch_configuration.XXX_configuration.id}"]
-[]
-
-[]
-[  tag {]
-
-[  tag {]
-[    key = "Name"]
-
-[    key = "Name"]
-[    value = "${var.environment_name}_YCU_XXX"]
-
-[    value = "${var.environment_name}_YCU_XXX"]
-[    propagate_at_launch = true]
-
-[    propagate_at_launch = true]
-[  }]
+  tag {
+    key = "Name"
+    value = "${var.environment}_YCU_Consul"
+    propagate_at_launch = true
+  }
+}
 Non-matching grp Consul
 
 [	security_groups = ["${aws_security_group.microservices_security_group.id}", "${aws_security_group.consul-enabled-services_security_group.id}"]]
 [	security_groups = ["${aws_security_group.XXX_security_group.id}"]]
-
-[	user_data = "${file("microservice-xxx")}"]
-[	user_data = "${file("xxx-servers")}"]
 
 resource "aws_launch_configuration" "Consul_configuration" {
   name                  = "${var.environment}_Consul"
