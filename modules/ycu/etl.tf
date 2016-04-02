@@ -1,6 +1,3 @@
-security_groups-config.tf:resource "aws_security_group" "ETL_security_group" {
-security_groups-config.tf:    name = "${var.environment_name}-ETL"
-security_groups-config.tf:        Name        = "${var.environment_name}-ETL"
 variable "ETL_ami_ids" {
   description = ""
   type        = "map"
@@ -52,17 +49,39 @@ resource "template_file" "ETL_user_data" {
   }
 }
 
-Non-matching grp ETL
+resource "aws_security_group" "ETL_security_group" {
+    name = "${var.environment_name}-ETL"
 
-[  depends_on = ["aws_autoscaling_group.Consul_group"] ]
-[  depends_on = ["aws_route.services_admin"]]
+    ingress {
+        from_port   = 22
+        to_port     = 22
+        protocol    = "tcp"
+        cidr_blocks = ["${var.workspaces_cidr_block}"]
+    }
 
-[  depends_on = ["aws_route.services_admin"]]
-[  [ blank ]]
+    ingress {
+        from_port   = 3389
+        to_port     = 3389
+        protocol    = "tcp"
+        cidr_blocks = ["${var.workspaces_cidr_block}"]
+    }
+
+    egress {
+        from_port = 0
+        to_port = 0
+        protocol = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
+
+    vpc_id = "${aws_vpc.ycu.id}"
+    tags {
+        Name        = "${var.environment_name}-ETL"
+        Environment = "${var.environment_name}"
+    }
+}
 
 resource "aws_autoscaling_group" "ETL_group" {
   depends_on = ["aws_internet_gateway.ycu"]
-  depends_on = ["aws_autoscaling_group.Consul_group"]
   #depends_on = ["aws_route.services_admin"]
   vpc_zone_identifier = ["${aws_subnet.services.*.id}"]
   name = "${var.environment}_YCU_ETL"
@@ -80,17 +99,13 @@ resource "aws_autoscaling_group" "ETL_group" {
     propagate_at_launch = true
   }
 }
-Non-matching grp ETL
-
-[	security_groups = ["${aws_security_group.microservices_security_group.id}", "${aws_security_group.consul-enabled-services_security_group.id}"]]
-[	security_groups = ["${aws_security_group.XXX_security_group.id}", "${aws_security_group.consul-enabled-services_security_group.id}"]]
 
 resource "aws_launch_configuration" "ETL_configuration" {
   name                  = "${var.environment}_ETL"
   image_id              = "${coalesce(lookup(var.ETL_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
   instance_type         = "${coalesce(lookup(var.ETL_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"
   key_name              = "${var.instance_key_name}"
-  security_groups       = ["${aws_security_group.microservices.id}"]
+  security_groups       = ["${aws_security_group.ETL_security_group.id}", "${aws_security_group.consul-enabled.id}"]
   iam_instance_profile  = "${aws_iam_instance_profile.microservices_profile.name}"
   user_data             = "${template_file.ETL_user_data.rendered}"
 }
