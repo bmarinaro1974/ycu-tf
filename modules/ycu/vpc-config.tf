@@ -56,9 +56,9 @@ resource "aws_route53_zone" "ycu" {
     Environment = "${var.environment}"
   }
 
-  lifecycle {
+  /*lifecycle {
     prevent_destroy = true
-  }
+  }*/
 }
 
 resource "template_file" "log_policy" {

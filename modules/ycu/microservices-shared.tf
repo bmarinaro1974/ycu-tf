@@ -26,13 +26,14 @@ resource "aws_security_group" "microservices" {
     from_port = 443
     to_port = 443
     protocol = "tcp"
-    security_groups = ["${aws_security_group.YCR.id}"]
+    cidr_blocks = ["${var.workspaces_cidr_block}"]
   }
-  ingress {
+
+  /*ingress {
     from_port = 443
     to_port = 443
     protocol = "tcp"
-    cidr_blocks = ["${var.workspaces_cidr_block}"]
+    security_groups = ["${aws_security_group.YCR.id}"]
   }
 
   ingress {
@@ -65,7 +66,7 @@ resource "aws_security_group" "microservices" {
     to_port = 8302
     protocol = "tcp"
     cidr_blocks = ["${var.svc_cidr_block}"]
-  }
+  }*/
 
   egress {
     from_port = 0
@@ -86,7 +87,7 @@ resource "aws_security_group" "consul-enabled" {
   name = "${var.environment}-consul-enabled"
 
 
-  ingress {
+  /*ingress {
     from_port = 8300
     to_port = 8302
     protocol = "udp"
@@ -96,7 +97,7 @@ resource "aws_security_group" "consul-enabled" {
     from_port = 8300
     to_port = 8302
     protocol = "udp"
-    security_groups = ["${aws_security_group.YCU-Direct.id}"]]
+    security_groups = ["${aws_security_group.YCU-Direct.id}"]
   }
   ingress {
     from_port = 8300
@@ -194,7 +195,7 @@ resource "aws_security_group" "consul-enabled" {
     to_port = 8301
     protocol = "tcp"
     security_groups = ["${aws_security_group.OpenEMPI.id}"]
-  }
+  }*/
 
 
   vpc_id = "${aws_vpc.ycu.id}"
