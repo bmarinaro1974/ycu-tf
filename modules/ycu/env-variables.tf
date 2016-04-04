@@ -18,12 +18,12 @@ variable "zones" {
   }
 }
 
-\*
+/*
 variable "provider_primary_account" {
   description = ""
   type = "string"
 }
-*\
+*/
 
 variable "instance_key_name" {
   type = "string"
