@@ -47,7 +47,7 @@ provider "aws" {
 # Sets up an environment that is analogous to the production environment
 
 module "application" {
-  source = "${var.workspace}/modules/ycu"
+  source = "../../modules/ycu"
   environment = "${var.environment}"
   region = "${var.region}"
   provider_primary_account = "${var.provider_primary.account}"
