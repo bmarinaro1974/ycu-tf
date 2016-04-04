@@ -44,7 +44,6 @@ provider "aws" {
   allowed_account_ids = ["${var.primary_account}"]
   region     = "${var.region}"
 }
-*/
 
 # Sets up an environment that is analogous to the production environment
 
