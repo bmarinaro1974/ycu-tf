@@ -4,44 +4,39 @@ variable "environment" {
 
 variable "region" {
   type = "string"
+  default = "us-east-1"
 }
 
 variable "instance_key_name" {
   type = "string"
+  default = "terraform-ycu-baa"
 }
 
 variable "chef_boot_bucket" {
   type = "string"
+  default = "ycu-chef-boot"
 }
 
 variable "chef_config_bucket" {
   type = "string"
+  default = "ycu-chef-config"
 }
 
 variable "consul_bucket" {
   type = "string"
+  default = "ycu-consul"
 }
 
 variable "elasticsearch_boot_bucket" {
   type = "string"
+  default = "ycu-elasticsearch-boot"
 }
 
-variable "provider_primary_account" {
-  type = "string"
-}
-
-variable "provider_primary_access_key" {
-  type = "string"
-}
-
-variable "provider_primary_secret_key" {
-  type = "string"
-}
 
 provider "aws" {
-  allowed_account_ids = ["${var.provider_primary_account}"]
-  access_key = "${var.provider_primary_access_key}"
-  secret_key = "${var.provider_primary_secret_key}"
+  allowed_account_ids = ["${var.provider_primary.account}"]
+  access_key = "${var.provider_primary.access_key}"
+  secret_key = "${var.provider_primary.secret_key}"
   region     = "${var.region}"
 }
 
