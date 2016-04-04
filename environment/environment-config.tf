@@ -36,12 +36,12 @@ variable "workspace" {
   type = "string"
 }
 
+variable "primary_account" {
+  type = "string"
+}
 
-/*
 provider "aws" {
-  allowed_account_ids = ["${var.provider_primary.account}"]
-  access_key = "${var.provider_primary.access_key}"
-  secret_key = "${var.provider_primary.secret_key}"
+  allowed_account_ids = ["${var.primary_account}"]
   region     = "${var.region}"
 }
 */
@@ -52,7 +52,7 @@ module "application" {
   source = "../modules/ycu"
   environment = "${var.environment}"
   region = "${var.region}"
-/*  provider_primary_account = "${var.provider_primary.account}" */
+  provider_primary_account = "${var.primary_account}"
   instance_key_name = "${var.instance_key_name}"
   chef_boot_bucket = "${var.chef_boot_bucket}"
   chef_config_bucket = "${var.chef_config_bucket}"
