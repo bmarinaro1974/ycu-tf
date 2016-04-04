@@ -40,9 +40,19 @@ variable "primary_account" {
   type = "string"
 }
 
+variable "access_key" {
+  type = "string"
+}
+
+variable "secret_key" {
+  type = "string"
+}
+
 provider "aws" {
   allowed_account_ids = ["${var.primary_account}"]
   region     = "${var.region}"
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
 }
 
 # Sets up an environment that is analogous to the production environment
