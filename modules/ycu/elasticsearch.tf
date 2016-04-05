@@ -143,7 +143,7 @@ s  #depends_on = ["aws_route.services_admin"]
   desired_capacity = "${lookup(var.default_asg_desired, var.environment)}"
   force_delete = true
   launch_configuration = "${aws_launch_configuration.Elasticsearch_configuration.id}"
-  load_balancers = ["${aws_elb.Elasticsearch_elb.name}"]
+  load_balancers = ["${aws_elb.Elasticsearch.name}"]
 
   tag {
     key = "Name"

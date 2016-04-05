@@ -55,7 +55,7 @@ resource "aws_security_group" "Elasticsearch_elb" {
     }
 }
 
-resource "aws_elb" "Elasticsearch_elb" {
+resource "aws_elb" "Elasticsearch" {
   name = "${var.environment_name}-Elasticsearch"
   subnets = ["${aws_subnet.application-subnet-A-nat.id}", "${aws_subnet.application-subnet-C-nat.id}", "${aws_subnet.application-subnet-D-nat.id}", "${aws_subnet.application-subnet-E-nat.id}"]
   security_groups = ["${aws_security_group.Elasticsearch_elb.id}"]
@@ -93,6 +93,12 @@ resource "aws_elb" "Elasticsearch_elb" {
   }
 }
 
+variable "dns_elb_Elasticsearch" {
+    default = {
+        record = "dev-6-0-Elasticsearch-elb.app"
+        type = "A"
+    }
+}
 
 resource "aws_route53_record" "Elasticsearch-elb" {
   zone_id = "${var.existing_route53_zones.yourcareuniverse_net_id}"
@@ -100,8 +106,8 @@ resource "aws_route53_record" "Elasticsearch-elb" {
   type = "${var.dns_elb_Elasticsearch.type}"
 
   alias {
-    name = "${aws_elb.Elasticsearch_elb.dns_name}"
-    zone_id = "${aws_elb.Elasticsearch_elb.zone_id}"
+    name = "${aws_elb.Elasticsearch.dns_name}"
+    zone_id = "${aws_elb.Elasticsearch.zone_id}"
     evaluate_target_health = false
   }
 }
