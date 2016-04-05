@@ -143,7 +143,7 @@ resource "aws_autoscaling_group" "RabbitMQ_group" {
   desired_capacity = "${lookup(var.default_asg_desired, var.environment)}"
   force_delete = true
   launch_configuration = "${aws_launch_configuration.RabbitMQ_configuration.id}"
-  load_balancers = ["${aws_elb.RabbitMQ_elb.name}"]]
+  load_balancers = ["${aws_elb.RabbitMQ.name}"]]
 
   tag {
     key = "Name"

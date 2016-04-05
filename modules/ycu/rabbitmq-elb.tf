@@ -76,7 +76,7 @@ resource "aws_security_group" "RabbitMQ_elb" {
     }
 }
 
-resource "aws_elb" "RabbitMQ_elb" {
+resource "aws_elb" "RabbitMQ" {
   name = "${var.environment_name}-RabbitMQ"
   subnets = ["${aws_subnet.application-subnet-A-nat.id}", "${aws_subnet.application-subnet-C-nat.id}", "${aws_subnet.application-subnet-D-nat.id}", "${aws_subnet.application-subnet-E-nat.id}", ]
   security_groups = ["${aws_security_group.RabbitMQ_elb.id}", "${aws_security_group.RabbitMQ-access.id}"]
@@ -112,6 +112,12 @@ resource "aws_elb" "RabbitMQ_elb" {
     Name = "${var.environment_name}-RabbitMQ"
   }
 }
+variable "dns_elb_RabbitMQ" {
+    default = {
+        record = "dev-6-0-RabbitMQ-elb.app"
+        type = "A"
+    }
+}
 
 resource "aws_route53_record" "RabbitMQ-elb" {
   zone_id = "${var.existing_route53_zones.yourcareuniverse_net_id}"
@@ -119,8 +125,8 @@ resource "aws_route53_record" "RabbitMQ-elb" {
   type = "${var.dns_elb_RabbitMQ.type}"
 
   alias {
-    name = "${aws_elb.RabbitMQ_elb.dns_name}"
-    zone_id = "${aws_elb.RabbitMQ_elb.zone_id}"
+    name = "${aws_elb.RabbitMQ.dns_name}"
+    zone_id = "${aws_elb.RabbitMQ.zone_id}"
     evaluate_target_health = false
   }
 }
