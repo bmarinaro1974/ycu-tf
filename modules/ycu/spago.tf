@@ -109,7 +109,7 @@ resource "aws_autoscaling_group" "Spago_group" {
   desired_capacity = "${lookup(var.default_asg_desired, var.environment)}"
   force_delete = true
   launch_configuration = "${aws_launch_configuration.Spago_configuration.id}"
-  load_balancers = ["${aws_elb.Spago_elb.name}"
+  load_balancers = ["${aws_elb.Spago.name}"
  
   tag {
     key = "Name"

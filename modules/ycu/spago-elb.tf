@@ -21,7 +21,7 @@ resource "aws_security_group" "Spago_elb" {
     }
 }
 
-resource "aws_elb" "Spago_elb" {
+resource "aws_elb" "Spago" {
   name = "${var.environment_name}-Spago"
   #XXX: public subnet?! HOW MANY SUBNETS ARE THERE? (like, 4 right?)
   subnets = ["${aws_subnet.public-subnet-A-nat.id}", "${aws_subnet.public-subnet-C-nat.id}", "${aws_subnet.public-subnet-D-nat.id}", "${aws_subnet.public-subnet-E-nat.id}", ]
@@ -59,8 +59,8 @@ resource "aws_route53_record" "Spago-elb" {
   type = "${var.dns_elb_Spago.type}"
 
   alias {
-    name = "${aws_elb.Spago_elb.dns_name}"
-    zone_id = "${aws_elb.Spago_elb.zone_id}"
+    name = "${aws_elb.Spago.dns_name}"
+    zone_id = "${aws_elb.Spago.zone_id}"
     evaluate_target_health = false
   }
 }
