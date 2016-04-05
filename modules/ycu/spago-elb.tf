@@ -53,6 +53,15 @@ resource "aws_elb" "Spago" {
   }
 }
 
+
+
+variable "dns_elb_Spago" {
+    default = {
+        record = "dev-6-0-Spago-elb.app"
+        type = "A"
+    }
+}
+
 resource "aws_route53_record" "Spago-elb" {
   zone_id = "${var.existing_route53_zones.yourcareuniverse_net_id}"
   name = "${var.dns_elb_Spago.record}"
