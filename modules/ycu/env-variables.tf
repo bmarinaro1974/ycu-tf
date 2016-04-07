@@ -227,18 +227,8 @@ variable "workspaces_cidr_block" {
   default = "192.168.2.0/24"
 }
 
-variable "elb_certs" {
-    default = {
-        Consul-HAProxy = "arn:aws:iam::678104714502:server-certificate/apiYourCareUniverseNet"
-        ProdPublicCM = "arn:aws:iam::678104714502:server-certificate/ELBProdPublicDirect"
-        YCR = "arn:aws:iam::678104714502:server-certificate/ycrBAAYourCareUniverseNet"
-        YCU-Direct = "arn:aws:iam::678104714502:server-certificate/ELBProdPublicDirect"
-        YCH-OpenEMPI = "arn:aws:iam::678104714502:server-certificate/ELBProdBaaOpenEMPI2016"
-        Spago = "arn:aws:iam::678104714502:server-certificate/ELBProdPublicSpagoBI"
-        Reporting = "arn:aws:iam::678104714502:server-certificate/ycureportingYourCareUniverseNet"
-        developmentCertificate = "arn:aws:iam::678104714502:server-certificate/wcDevYourCareUniverseNet"
-    }
-}
+#       cidr_blocks = ["${var.workspaces_cidr_block}"]
+
 
 ##############################################
 # Mystery cidr blocks (named after planets in order of appearence)
