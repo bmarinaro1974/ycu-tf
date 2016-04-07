@@ -5,6 +5,19 @@ variable "dns_elb_Reporting" {
     }
 }
 
+resource "aws_route53_record" "Reporting-elb" {
+  zone_id = "${var.existing_route53_zones.yourcareuniverse_net_id}"
+  name = "${var.dns_elb_Reporting.record}"
+  type = "${var.dns_elb_Reporting.type}"
+
+  alias {
+    name = "${aws_elb.Reporting.dns_name}"
+    zone_id = "${aws_elb.Reporting.zone_id}"
+    evaluate_target_health = false
+  }
+}
+
+
 resource "aws_security_group" "Reporting_elb_security_group" {
     name = "${var.environment_name}-Reporting-elb"
 

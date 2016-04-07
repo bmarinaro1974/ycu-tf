@@ -6,6 +6,17 @@ variable "dns_elb_Consul-HAProxy" {
     }
 }
 
+resource "aws_route53_record" "Consul-HAProxy-elb" {
+  zone_id = "${var.existing_route53_zones.yourcareuniverse_net_id}"
+  name = "${var.dns_elb_Consul-HAProxy.record}"
+  type = "${var.dns_elb_Consul-HAProxy.type}"
+
+  alias {
+    name = "${aws_elb.Consul-HAProxy.dns_name}"
+    zone_id = "${aws_elb.Consul-HAProxy.zone_id}"
+    evaluate_target_health = false
+  }
+}
 
 resource "aws_security_group" "Consul-HAProxy_elb_security_group" {
     name = "${var.environment_name}-Consul-HAProxy-elb"
