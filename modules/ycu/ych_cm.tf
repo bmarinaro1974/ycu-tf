@@ -1,6 +1,3 @@
-security_groups-config.tf:resource "aws_security_group" "YCH_CM_security_group" {
-security_groups-config.tf:    name = "${var.environment_name}-YCH_CM"
-security_groups-config.tf:        Name        = "${var.environment_name}-YCH_CM"
 variable "YCH_CM_ami_ids" {
   description = ""
   type        = "map"
@@ -52,44 +49,84 @@ resource "template_file" "YCH_CM_user_data" {
   }
 }
 
-Non-matching grp YCH_CM
+resource "aws_security_group" "YCH_CM" {
+    name = "${var.environment_name}-YCH_CM"
+        
+    ingress {
+      from_port = 0
+      to_port = 0
+      protocol = "-1"
+      self = "true"
+    } 
 
-[  depends_on = ["aws_internet_gateway.services"] ]
-[  depends_on = ["aws_internet_gateway.public"] ]
+    ingress {
+      from_port = 22
+      to_port = 22
+      protocol = "tcp"
+      cidr_blocks = ["192.168.2.0/24"]
+    }
 
-[  depends_on = ["aws_route.services_admin"]]
-[  depends_on = ["aws_route.public_admin"]]
+    ingress {
+        from_port = 6379
+        to_port = 6379
+        protocol = "tcp"
+        cidr_blocks = ["10.12.10.128/26"]
+    }
 
-[  vpc_zone_identifier = ["${aws_subnet.services-subnet-A.id}", "${aws_subnet.services-subnet-C.id}", "${aws_subnet.services-subnet-D.id}", "${aws_subnet.services-subnet-E.id}"]]
-[  vpc_zone_identifier = ["${aws_subnet.public-subnet-A.id}", "${aws_subnet.public-subnet-C.id}", "${aws_subnet.public-subnet-D.id}", "${aws_subnet.public-subnet-E.id}"]]
+    ingress {
+        from_port = 443
+        to_port = 443
+        protocol = "tcp"
+        cidr_blocks = ["10.17.10.128/26"]
+    }
+    ingress {
+        from_port = 443
+        to_port = 443
+        protocol = "tcp"
+        cidr_blocks = ["10.50.0.0/16"]
+    }
 
-[  name = "${var.environment_name}_YCU_XXX"]
-[  name = "${var.environment_name}_XXX"]
+    ingress {
+        from_port = 6033
+        to_port = 6033
+        protocol = "tcp"
+        cidr_blocks = ["192.168.2.0/24"]
+    }
 
-[]
-[  load_balancers = ["${aws_elb.ProdPublicCM_elb.name}", "${aws_elb.ProdPublicCMInternal_elb.name}"]]
+    ingress {
+        from_port = 8283
+        to_port = 8283
+        protocol = "tcp"
+        security_groups = ["${aws_security_group.ProdPublicCM_elb.id}"]
+    }
+    ingress {
+        from_port = 8283
+        to_port = 8283
+        protocol = "tcp"
+        security_groups = ["${aws_security_group.ProdPublicCMInternal_elb.id}"]
+    }
+    
 
-[  tag {]
-[]
+    egress {
+        from_port = 0
+        to_port = 0
+        protocol = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+    }
 
-[    key = "Name"]
-[  tag {]
-
-[    value = "${var.environment_name}_YCU_XXX"]
-[    key = "Name"]
-
-[    propagate_at_launch = true]
-[    value = "${var.environment_name}_XXX"]
-
-[  }]
-[    propagate_at_launch = true]
+    vpc_id = "${aws_vpc.public.id}"
+    tags {
+        Name        = "${var.environment_name}-YCH_CM"
+        Environment = "${var.environment_name}"
+    }
+}
 
 resource "aws_autoscaling_group" "YCH_CM_group" {
   depends_on = ["aws_internet_gateway.ycu"]
   depends_on = ["aws_autoscaling_group.Consul_group"]
-  #depends_on = ["aws_route.services_admin"]
-  vpc_zone_identifier = ["${aws_subnet.services.*.id}"]
-  name = "${var.environment}_YCU_YCH_CM"
+  #depends_on = ["aws_route.public_admin"]
+  vpc_zone_identifier = ["${aws_subnet.public.*.id}"]
+  name = "${var.environment}_YCH_CM"
   max_size = "${lookup(var.default_asg_max, var.environment)}"
   min_size = "${lookup(var.default_asg_min, var.environment)}"
   health_check_grace_period = "${var.default_asg_health_check_period}"
@@ -97,27 +134,21 @@ resource "aws_autoscaling_group" "YCH_CM_group" {
   desired_capacity = "${lookup(var.default_asg_desired, var.environment)}"
   force_delete = true
   launch_configuration = "${aws_launch_configuration.YCH_CM_configuration.id}"
+  load_balancers = ["${aws_elb.ProdPublicCM.name}", "${aws_elb.ProdPublicCMInternal.name}"]
 
   tag {
     key = "Name"
-    value = "${var.environment}_YCU_YCH_CM"
+    value = "${var.environment}_YCH_CM"
     propagate_at_launch = true
   }
 }
-Non-matching grp YCH_CM
-
-[	security_groups = ["${aws_security_group.microservices_security_group.id}", "${aws_security_group.consul-enabled-services_security_group.id}"]]
-[	security_groups = ["${aws_security_group.XXX_security_group.id}", "${aws_security_group.consul-enabled-public_security_group.id}"]]
-
-[	user_data = "${file("microservice-xxx")}"]
-[	user_data = "${file("ycu-connex-master")}"]
 
 resource "aws_launch_configuration" "YCH_CM_configuration" {
   name                  = "${var.environment}_YCH_CM"
   image_id              = "${coalesce(lookup(var.YCH_CM_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
   instance_type         = "${coalesce(lookup(var.YCH_CM_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"
   key_name              = "${var.instance_key_name}"
-  security_groups       = ["${aws_security_group.microservices.id}"]
+  security_groups       = ["${aws_security_group.YCH_CM.id}", "${aws_security_group.consul-enabled-public_security_group.id}"]
   iam_instance_profile  = "${aws_iam_instance_profile.microservices_profile.name}"
   user_data             = "${template_file.YCH_CM_user_data.rendered}"
 }
