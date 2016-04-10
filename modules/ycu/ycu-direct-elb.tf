@@ -1,6 +1,6 @@
 
 
-resource "aws_security_group" "YCU-Direct_elb_security_group" {
+resource "aws_security_group" "YCU-Direct_elb" {
     name = "${var.environment_name}-YCU-Direct-elb"
 
     ingress {
@@ -14,7 +14,7 @@ resource "aws_security_group" "YCU-Direct_elb_security_group" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
 
     egress {
@@ -45,7 +45,7 @@ resource "aws_security_group" "YCU-Direct-Internal_elb_security_group" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
 
     egress {

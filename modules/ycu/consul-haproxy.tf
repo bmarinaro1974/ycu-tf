@@ -12,50 +12,50 @@ resource "aws_security_group" "Consul-HAProxy_security_group" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks = ["${var.workspaces_cidr_block}"]
     }
 
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.27.20.0/24"]
+        cidr_blocks = ["${var.moon_cidr_block}"]
     }
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.37.10.64/26"]
+        cidr_blocks = ["${var.triton_cidr_block}"]
     }
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.17.11.0/26"]
+        cidr_blocks = ["${var.uranus_cidr_block}"]
     }
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.17.12.128/26"]
+        cidr_blocks = ["${var.miranda_cidr_block}"]
     }
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.17.10.64/26"]
+        cidr_blocks = ["${var.umbriel_cidr_block}"]
     }
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.17.10.128/26"]
+        cidr_blocks = ["${var.ariel_cidr_block}"]
     }
     ingress {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        cidr_blocks = ["10.17.10.192/26"]
+        cidr_blocks = ["${var.titania_cidr_block}"]
     }
     ingress {
         from_port = 7001
@@ -67,7 +67,7 @@ resource "aws_security_group" "Consul-HAProxy_security_group" {
         from_port = 7001
         to_port = 7001
         protocol = "tcp"
-        security_groups = ["${aws_security_group.Consul-HAProxy_elb_security_group.id}"]
+        security_groups = ["${aws_security_group.Consul-HAProxy_elb.id}"]
     }
 
     egress {

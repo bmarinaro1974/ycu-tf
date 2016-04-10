@@ -227,11 +227,8 @@ variable "workspaces_cidr_block" {
   default = "192.168.2.0/24"
 }
 
-#       cidr_blocks = ["${var.workspaces_cidr_block}"]
-
-
 ##############################################
-# Mystery cidr blocks (named after planets in order of appearence)
+# Mystery cidr blocks (named after planets in vague order of appearence)
 ###########################################
 variable "mercury_cidr_block" {
   type = "string"
@@ -253,6 +250,11 @@ variable "earth_cidr_block" {
   default = "10.27.10.0/24"
 }
 
+variable "moon_cidr_block" {
+  type = "string"
+  default = "10.27.20.0/24"
+}
+
 variable "mars_cidr_block" {
   type = "string"
   default = "10.32.10.0/24"
@@ -271,6 +273,46 @@ variable "saturn_cidr_block" {
 variable "neptune_cidr_block" {
   type = "string"
   default = "10.37.11.192/26"
+}
+
+variable "triton_cidr_block" {
+  type = "string"
+  default = "10.37.10.64/26"
+}
+
+variable "uranus_cidr_block" {
+  type = "string"
+  default = "10.17.11.0/26"
+}
+
+variable "miranda_cidr_block" {
+  type = "string"
+  default = "10.17.12.128/26"
+}
+
+variable "umbriel_cidr_block" {
+  type = "string"
+  default = "10.17.10.64/26"
+}
+
+variable "ariel_cidr_block" {
+  type = "string"
+  default = "10.17.10.128/26"
+}
+
+variable "titania_cidr_block" {
+  type = "string"
+  default = "10.17.10.192/26"
+}
+
+variable "kepler18f_cidr_block" {
+  type "string"
+  default = "10.31.11.0/24"
+}
+
+variable "kepler16b_cidr_block" {
+  type "string"
+  default = "172.31.0.0/16"
 }
 
 

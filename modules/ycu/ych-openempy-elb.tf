@@ -6,13 +6,13 @@ resource "aws_security_group" "YCH-OpenEMPI_elb" {
         from_port   = 443
         to_port     = 443
         protocol    = "tcp"
-        cidr_blocks = ["10.17.10.0/24"]
+        cidr_blocks =  ["${var.venus_cidr_block}"]
     }
     ingress {
         from_port   = 443
         to_port     = 443
         protocol    = "tcp"
-        cidr_blocks = ["192.168.2.0/24"]
+        cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
 
     egress {

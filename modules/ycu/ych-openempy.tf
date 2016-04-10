@@ -63,14 +63,16 @@ resource "aws_security_group" "YCH-OpenEMPI" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+            cidr_blocks =  ["${var.workspaces_cidr_block}"]
+
     }
     
     ingress {
       from_port = 8380
       to_port = 8380
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+            cidr_blocks =  ["${var.workspaces_cidr_block}"]
+
     }
 
     ingress {

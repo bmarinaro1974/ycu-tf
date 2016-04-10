@@ -12,46 +12,46 @@ resource "aws_security_group" "Consul_security_group" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
 
     ingress {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["172.31.0.0/16"]
-    }
+      cidr_blocks = ["${var.kepler16b_cidr_block}"]
+   }
 
     ingress {
         from_port = 8300
         to_port = 8302
         protocol = "tcp"
-        cidr_blocks = ["10.31.11.0/24"]
+        cidr_blocks = ["${var.kepler18f_cidr_block}"]
     }
      ingress {
         from_port = 8400
         to_port = 8400
         protocol = "tcp"
-        cidr_blocks = ["10.31.11.0/24"]
+        cidr_blocks = ["${var.kepler18f_cidr_block}"]
     }
      ingress {
         from_port = 8500
         to_port = 8501
         protocol = "tcp"
-        cidr_blocks = ["10.31.11.0/24"]
+        cidr_blocks = ["${var.kepler18f_cidr_block}"]
     }
      ingress {
         from_port = 8600
         to_port = 8600
         protocol = "tcp"
-        cidr_blocks = ["10.31.11.0/24"]
+        cidr_blocks = ["${var.kepler18f_cidr_block}"]
     }
     
     ingress {
         from_port = 8500
         to_port = 8501
         protocol = "tcp"
-        cidr_blocks = ["192.168.2.0/24"]
+        cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
     ingress {
         from_port = 8300

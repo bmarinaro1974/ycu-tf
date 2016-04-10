@@ -49,14 +49,14 @@ resource "aws_security_group" "Reporting_security_group" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
 
     ingress {
         from_port = 8983
         to_port = 8983
         protocol = "tcp"
-        security_groups = ["${aws_security_group.Reporting_elb_security_group.id}"]
+        security_groups = ["${aws_security_group.Reporting_elb.id}"]
     }
     
     ingress {

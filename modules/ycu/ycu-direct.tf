@@ -35,7 +35,7 @@ variable "YCU-Direct_instance_types" {
   }
 }
 
-resource "aws_security_group" "YCU-Direct_security_group" {
+resource "aws_security_group" "YCU-Direct" {
     name = "${var.environment_name}-YCU-Direct"
         
     ingress {
@@ -49,21 +49,21 @@ resource "aws_security_group" "YCU-Direct_security_group" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
 
     ingress {
         from_port = 8583
         to_port = 8583
         protocol = "tcp"
-        security_groups = ["${aws_security_group.YCU-Direct_elb_security_group.id}"]
+        security_groups = ["${aws_security_group.YCU-Direct_elb.id}"]
     }
     
     ingress {
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = ["10.50.0.0/16"]
+        cidr_blocks = ["${var.pluto_cidr_block}"]
     }
     
     egress {

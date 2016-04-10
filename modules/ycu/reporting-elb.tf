@@ -25,7 +25,8 @@ resource "aws_security_group" "Reporting_elb_security_group" {
         from_port   = 443
         to_port     = 443
         protocol    = "tcp"
-        cidr_blocks = ["192.168.2.0/24"]
+        cidr_blocks =  ["${var.workspaces_cidr_block}"]
+
     }
 
     egress {
