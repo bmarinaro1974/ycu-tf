@@ -86,7 +86,7 @@ resource "aws_security_group" "YCH-OpenEMPI" {
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = ["10.50.0.0/16"]
+        cidr_blocks = ["${var.pluto_cidr_block}"]
     }
     
     egress {

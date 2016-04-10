@@ -265,6 +265,11 @@ variable "jupiter_cidr_block" {
   default = "10.12.10.0/25"
 }
 
+variable "europa_cidr_block" {
+  type = "string"
+  default = "10.12.10.128/26"
+}
+
 variable "saturn_cidr_block" {
   type = "string"
   default = "10.37.11.0/26"
@@ -303,6 +308,11 @@ variable "ariel_cidr_block" {
 variable "titania_cidr_block" {
   type = "string"
   default = "10.17.10.192/26"
+}
+
+variable "pluto_cidr_block" {
+  type = "string"
+  default = "10.50.0.0/16"
 }
 
 variable "kepler18f_cidr_block" {

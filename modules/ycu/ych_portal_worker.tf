@@ -50,20 +50,20 @@ resource "aws_security_group" "YCH_Portal_Worker" {
       from_port = 22
       to_port = 22
       protocol = "tcp"
-      cidr_blocks = ["192.168.2.0/24"]
+      cidr_blocks = ["${var.workspaces_cidr_block}"]
     }
 
     ingress {
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = ["10.17.10.128/26"]
+        cidr_blocks = ["${var.ariel_cidr_block}"]
     }
     ingress {
         from_port = 443
         to_port = 443
         protocol = "tcp"
-        cidr_blocks = ["10.50.0.0/16"]
+        cidr_blocks = ["${var.pluto_cidr_block}"]
     }
     ingress {
         from_port = 443
