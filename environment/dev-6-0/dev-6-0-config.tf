@@ -3,6 +3,11 @@ variable "environment" {
   default = "dev1"
 }
 
+variable "version" {
+  type = "string"
+  default = "dev-6-0"
+}
+
 variable "region" {
   type = "string"
   default = "us-east-1"
@@ -54,6 +59,7 @@ module "application" {
   source = "../../modules/ycu"
   environment = "${var.environment}"
   region = "${var.region}"
+  version = "${var.version}"
   provider_primary_account = "${var.provider_primary.account}"
   instance_key_name = "${var.instance_key_name}"
   chef_boot_bucket = "${var.chef_boot_bucket}"

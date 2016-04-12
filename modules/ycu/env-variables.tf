@@ -3,6 +3,11 @@ variable "environment" {
   type          = "string"
 }
 
+variable "version" {
+  description   = ""
+  type          = "string"
+}
+
 variable "region" {
   description   = ""
   type          = "string"
@@ -316,7 +321,7 @@ variable "pluto_cidr_block" {
 }
 
 variable "kepler18f_cidr_block" {
-  type "string"
+  type = "string"
   default = "10.31.11.0/24"
 }
 
