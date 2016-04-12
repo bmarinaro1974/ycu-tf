@@ -1,5 +1,5 @@
-resource "aws_security_group" "Consul_security_group" {
-    name = "${var.environment_name}-Consul"
+resource "aws_security_group" "consul" {
+    name = "${var.environment}-Consul"
         
     ingress {
       from_port = 0
@@ -14,38 +14,6 @@ resource "aws_security_group" "Consul_security_group" {
       protocol = "tcp"
       cidr_blocks =  ["${var.workspaces_cidr_block}"]
     }
-
-    ingress {
-      from_port = 22
-      to_port = 22
-      protocol = "tcp"
-      cidr_blocks = ["${var.kepler16b_cidr_block}"]
-   }
-
-    ingress {
-        from_port = 8300
-        to_port = 8302
-        protocol = "tcp"
-        cidr_blocks = ["${var.kepler18f_cidr_block}"]
-    }
-     ingress {
-        from_port = 8400
-        to_port = 8400
-        protocol = "tcp"
-        cidr_blocks = ["${var.kepler18f_cidr_block}"]
-    }
-     ingress {
-        from_port = 8500
-        to_port = 8501
-        protocol = "tcp"
-        cidr_blocks = ["${var.kepler18f_cidr_block}"]
-    }
-     ingress {
-        from_port = 8600
-        to_port = 8600
-        protocol = "tcp"
-        cidr_blocks = ["${var.kepler18f_cidr_block}"]
-    }
     
     ingress {
         from_port = 8500
@@ -57,7 +25,7 @@ resource "aws_security_group" "Consul_security_group" {
         from_port = 8300
         to_port = 8302
         protocol = "tcp"
-        cidr_blocks = ["${var.vpc_services.cidr_block}"]
+        cidr_blocks = ["${aws_subnet.services.cidr_block}"]
     }
 
     egress {
@@ -67,10 +35,10 @@ resource "aws_security_group" "Consul_security_group" {
         cidr_blocks = ["0.0.0.0/0"]
     }
     # XXX: vpc application??
-    vpc_id = "${aws_vpc.application.id}"
+    vpc_id = "${aws_vpc.ycu.id}"
     tags {
-        Name        = "${var.environment_name}-Consul"
-        Environment = "${var.environment_name}"
+        Name        = "${var.environment}-Consul"
+        Environment = "${var.environment}"
     }
 }
 
@@ -128,7 +96,7 @@ resource "template_file" "Consul_user_data" {
 resource "aws_autoscaling_group" "Consul_group" {
   # XXX: an application gateway?
   depends_on = ["aws_internet_gateway.ycu"]
-s  #depends_on = ["aws_route.application_admin"]
+  #depends_on = ["aws_route.application_admin"]
   vpc_zone_identifier = ["${aws_subnet.application.*.id}"]
   name = "${var.environment}_YCU_Consul"
   max_size = "${lookup(var.default_asg_max, var.environment)}"
@@ -142,6 +110,7 @@ s  #depends_on = ["aws_route.application_admin"]
   tag {
     key = "Name"
     value = "${var.environment}_YCU_Consul"
+    environment = "${var.version}"
     propagate_at_launch = true
   }
 }
