@@ -21,198 +21,89 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="env-variables.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/ycu/env-variables.tf">
+      <file leaf-file-name="ycu-direct.tf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/ycu/ycu-direct.tf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app-config.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/ycu/app-config.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="557">
+              <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
               <folding>
-                <marker date="1457550843000" expanded="true" signature="50:67" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="97:155" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="109:154" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="180:246" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="189:245" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="195:231" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="206:229" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="358:409" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="367:408" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="431:456" placeholder="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consul.tf" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/ycu/consul.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="120" column="38" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
-              <folding>
-                <marker date="1460428104000" expanded="true" signature="53:71" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="291:319" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="445:473" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="593:626" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="800:817" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="853:871" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="903:921" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1546:1584" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1552:1583" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="1648:1661" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1682:1700" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1726:1749" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1777:1802" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1825:1845" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1880:1912" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2122:2152" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2165:2183" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2210:2257" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2218:2256" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="2273:2320" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2281:2319" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="2353:2391" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2416:2452" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2476:2527" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2484:2526" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="2577:2628" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2669:2687" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2719:2733" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2861:2879" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2915:3017" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="2925:3016" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="2932:2969" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="2977:3015" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="3046:3162" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="3056:3161" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="3063:3107" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="3115:3160" placeholder="(...)" />
-                <marker date="1460428104000" expanded="true" signature="3191:3215" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="3245:3276" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="3306:3360" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="3389:3431" placeholder="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consul-haproxy-elb.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/ycu/consul-haproxy-elb.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1460426312000" expanded="true" signature="191:244" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="256:292" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="304:338" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="363:397" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="414:447" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="571:594" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="888:908" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="944:967" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1011:1034" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1093:1116" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1147:1183" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1187:1223" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1227:1263" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1267:1303" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1330:1388" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1528:1567" placeholder="${...}" />
-                <marker date="1460426312000" expanded="true" signature="1849:1872" placeholder="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dev-6-0-config.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/environment/dev-6-0/dev-6-0-config.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-              <folding>
-                <marker date="1460428104000" expanded="true" signature="845:876" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="895:929" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="947:981" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="999:1012" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1162:1180" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1194:1207" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1222:1234" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1222:1236" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1268:1299" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1324:1348" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1372:1395" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1421:1446" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1467:1487" placeholder="${...}" />
-                <marker date="1460428104000" expanded="true" signature="1520:1552" placeholder="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="svc-config.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/ycu/svc-config.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="31" />
-              <folding>
-                <marker date="1457550843000" expanded="true" signature="47:64" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="94:152" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="106:151" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="177:243" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="186:242" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="192:228" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="203:226" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="355:403" placeholder="${...}" />
-                <marker date="1457550843000" expanded="true" signature="364:402" placeholder="(...)" />
-                <marker date="1457550843000" expanded="true" signature="425:450" placeholder="${...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vpc-config.tf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/ycu/vpc-config.tf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-              <folding>
-                <marker date="1460011343000" expanded="true" signature="43:75" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="99:147" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="107:146" placeholder="(...)" />
-                <marker date="1460011343000" expanded="true" signature="168:186" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="213:231" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="292:309" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="329:347" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="374:392" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="610:651" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="619:650" placeholder="(...)" />
-                <marker date="1460011343000" expanded="true" signature="668:712" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="677:711" placeholder="(...)" />
-                <marker date="1460011343000" expanded="true" signature="764:781" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="845:872" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="907:925" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="930:944" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="984:1002" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1075:1092" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1114:1139" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1190:1208" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1253:1271" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1313:1331" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1440:1488" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1446:1487" placeholder="(...)" />
-                <marker date="1460011343000" expanded="true" signature="1535:1553" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1610:1656" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1618:1655" placeholder="(...)" />
-                <marker date="1460011343000" expanded="true" signature="1715:1733" placeholder="${...}" />
-                <marker date="1460011343000" expanded="true" signature="1795:1831" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="623:641" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="866:894" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1016:1033" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1063:1081" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1117:1135" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1227:1245" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1479:1507" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1629:1646" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1676:1694" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1739:1757" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1814:1832" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1859:1881" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="1906:1960" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="2104:2143" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="2458:2476" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="2553:2571" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="2607:2629" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="2654:2717" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="2861:2900" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3215:3233" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3323:3376" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3388:3420" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3432:3462" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3487:3517" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3534:3563" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3762:3780" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3807:3829" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="3854:3908" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="4052:4091" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="4406:4424" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="4497:4515" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="4551:4573" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="4598:4661" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="4805:4844" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="5159:5177" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="5264:5282" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="5506:5534" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="5659:5698" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="5821:5844" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="5994:6011" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6047:6065" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6101:6119" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6195:6233" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6201:6232" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="6301:6314" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6335:6353" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6379:6402" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6430:6455" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6478:6498" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6533:6565" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6795:6817" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6830:6848" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6875:6922" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6883:6921" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="6938:6985" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="6946:6984" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7018:7056" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7081:7117" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7141:7192" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7149:7191" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7242:7297" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7320:7346" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7350:7385" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7427:7445" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7588:7606" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7646:7752" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7656:7751" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7663:7704" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7712:7750" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7781:7901" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7791:7900" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7798:7846" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7854:7899" placeholder="(...)" />
+                <marker date="1460569796000" expanded="true" signature="7930:7954" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="7983:8033" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="8098:8152" placeholder="${...}" />
+                <marker date="1460569796000" expanded="true" signature="8181:8227" placeholder="${...}" />
               </folding>
             </state>
           </provider>
@@ -242,12 +133,24 @@
         <option value="$PROJECT_DIR$/environment/dev-6-0/dev-6-0-config.tf" />
         <option value="$PROJECT_DIR$/modules/ycu/consul.tf" />
         <option value="$PROJECT_DIR$/modules/ycu/env-variables.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/placeholders.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/consul-haproxy-elb.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/consul-haproxy.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/elasticsearch-elb.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/elasticsearch.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/rabbitmq-elb.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/rabbitmq.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/reporting.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/spago.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/ych-openempy.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/ycr.tf" />
+        <option value="$PROJECT_DIR$/modules/ycu/ycu-direct.tf" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="24" />
+    <option name="x" value="13" />
+    <option name="y" value="49" />
     <option name="width" value="1260" />
     <option name="height" value="687" />
   </component>
@@ -449,6 +352,17 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -635,8 +549,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="24" width="1260" height="687" extended-state="0" />
-    <editor active="true" />
+    <frame x="13" y="49" width="1260" height="687" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -648,7 +562,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -679,373 +593,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/ycu/microservices-shared.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-          <folding>
-            <marker date="1460011343000" expanded="true" signature="58:76" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="268:291" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="388:416" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="519:547" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="645:673" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="778:813" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="917:949" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1053:1084" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1188:1216" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1317:1338" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1460:1477" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1507:1525" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1560:1578" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1647:1665" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1781:1814" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1918:1953" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2058:2089" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2193:2221" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2325:2355" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2459:2491" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2595:2622" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2726:2757" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2861:2894" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2999:3032" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3136:3171" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3276:3307" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3411:3439" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3543:3573" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3677:3709" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3813:3840" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3944:3975" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4079:4112" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4133:4150" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4180:4198" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4234:4252" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4326:4377" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4332:4376" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="4430:4453" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4498:4523" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4563:4583" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4635:4667" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4728:4746" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4786:4835" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4792:4834" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="4899:4917" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4943:4975" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4989:5035" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="5112:5130" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="5166:5200" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/pass-thru/pass-thru.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/dev-6-0/dev-6-0-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/dev-6-0/secrets.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/pub-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457550843000" expanded="true" signature="42:59" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="89:147" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="101:146" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="172:238" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="181:237" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="187:223" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="198:221" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="323:340" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="399:429" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="512:555" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="521:554" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="577:602" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/network-variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/vpc-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <marker date="1460011343000" expanded="true" signature="43:75" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="99:147" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="107:146" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="168:186" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="213:231" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="292:309" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="329:347" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="374:392" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="610:651" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="619:650" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="668:712" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="677:711" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="764:781" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="845:872" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="907:925" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="930:944" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="984:1002" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1075:1092" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1114:1139" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1190:1208" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1253:1271" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1313:1331" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1440:1488" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1446:1487" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="1535:1553" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1610:1656" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1618:1655" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="1715:1733" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1795:1831" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/env-variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/app-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457550843000" expanded="true" signature="50:67" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="97:155" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="109:154" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="180:246" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="189:245" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="195:231" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="206:229" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="358:409" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="367:408" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="431:456" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/yce-services.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-          <folding>
-            <marker date="1458568344000" expanded="true" signature="632:670" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="638:669" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="740:753" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="774:792" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="818:841" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="869:894" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="917:937" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="972:1004" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="996:1004" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1108:1126" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1168:1276" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1178:1275" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1185:1228" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1236:1274" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1305:1427" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1315:1426" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1322:1372" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1380:1425" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1426:1427" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1456:1480" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1479:1480" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1510:1548" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1578:1632" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1580:1626" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="1631:1632" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1661:1709" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1708:1709" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1940:1953" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1940:1967" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1963:1967" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="1980:1998" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2027:2074" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2035:2073" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="2090:2137" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2098:2136" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="2170:2208" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2233:2269" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2293:2344" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2301:2343" placeholder="(...)" />
-            <marker date="1458568344000" expanded="true" signature="2394:2451" placeholder="${...}" />
-            <marker date="1458568344000" expanded="true" signature="2492:2510" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/microservices-shared.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-          <folding>
-            <marker date="1460011343000" expanded="true" signature="58:76" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="268:291" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="388:416" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="519:547" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="645:673" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="778:813" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="917:949" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1053:1084" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1188:1216" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1317:1338" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1460:1477" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1507:1525" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1560:1578" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1647:1665" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1781:1814" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1918:1953" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2058:2089" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2193:2221" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2325:2355" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2459:2491" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2595:2622" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2726:2757" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2861:2894" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="2999:3032" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3136:3171" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3276:3307" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3411:3439" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3543:3573" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3677:3709" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3813:3840" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="3944:3975" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4079:4112" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4133:4150" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4180:4198" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4234:4252" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4326:4377" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4332:4376" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="4430:4453" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4498:4523" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4563:4583" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4635:4667" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4728:4746" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4786:4835" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4792:4834" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="4899:4917" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4943:4975" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="4989:5035" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="5112:5130" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="5166:5200" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/pass-thru/pass-thru.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/dev-6-0/dev-6-0-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/dev-6-0/secrets.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/pub-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457550843000" expanded="true" signature="42:59" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="89:147" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="101:146" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="172:238" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="181:237" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="187:223" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="198:221" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="323:340" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="399:429" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="512:555" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="521:554" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="577:602" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/network-variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/vpc-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <marker date="1460011343000" expanded="true" signature="43:75" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="99:147" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="107:146" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="168:186" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="213:231" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="292:309" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="329:347" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="374:392" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="610:651" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="619:650" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="668:712" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="677:711" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="764:781" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="845:872" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="907:925" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="930:944" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="984:1002" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1075:1092" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1114:1139" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1190:1208" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1253:1271" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1313:1331" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1440:1488" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1446:1487" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="1535:1553" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1610:1656" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1618:1655" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="1715:1733" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1795:1831" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/ycu/env-variables.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1380,7 +927,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/pub-config.tf">
+    <entry file="file://$PROJECT_DIR$/modules/pass-thru/pass-thru.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1456744933000" expanded="true" signature="123:135" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/user-data.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/web-config.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1392,12 +957,44 @@
             <marker date="1457550843000" expanded="true" signature="181:237" placeholder="(...)" />
             <marker date="1457550843000" expanded="true" signature="187:223" placeholder="(...)" />
             <marker date="1457550843000" expanded="true" signature="198:221" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="323:340" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="399:429" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="512:555" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="521:554" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="577:602" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="350:393" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="359:392" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="415:440" placeholder="${...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/microservices-policy.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/network/network-variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+          <folding>
+            <marker date="1458567532000" expanded="true" signature="676:757" placeholder="${...}" />
+            <marker date="1458567532000" expanded="true" signature="688:756" placeholder="(...)" />
+            <marker date="1458567532000" expanded="true" signature="717:754" placeholder="(...)" />
+            <marker date="1458567532000" expanded="true" signature="1078:1184" placeholder="${...}" />
+            <marker date="1458567532000" expanded="true" signature="1090:1183" placeholder="(...)" />
+            <marker date="1458567532000" expanded="true" signature="1130:1181" placeholder="(...)" />
+            <marker date="1458567532000" expanded="true" signature="1136:1163" placeholder="(...)" />
+            <marker date="1458567532000" expanded="true" signature="1328:1361" placeholder="${...}" />
+            <marker date="1458567532000" expanded="true" signature="1403:1433" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/assume-role-policy.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1459,241 +1056,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/pass-thru/pass-thru.tf">
+    <entry file="file://$PROJECT_DIR$/modules/ycu/placeholders.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="720">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
           <folding>
-            <marker date="1456744933000" expanded="true" signature="123:135" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="78:96" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="372:389" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="419:437" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="477:495" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="572:590" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="856:873" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="903:921" placeholder="${...}" />
+            <marker date="1460567514000" expanded="true" signature="951:969" placeholder="${...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/user-data.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/web-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457550843000" expanded="true" signature="42:59" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="89:147" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="101:146" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="172:238" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="181:237" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="187:223" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="198:221" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="350:393" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="359:392" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="415:440" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/microservices-policy.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/consul-haproxy-elb.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1460426312000" expanded="true" signature="191:244" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="256:292" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="304:338" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="363:397" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="414:447" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="571:594" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="888:908" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="944:967" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1011:1034" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1093:1116" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1147:1183" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1187:1223" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1227:1263" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1267:1303" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1330:1388" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1528:1567" placeholder="${...}" />
-            <marker date="1460426312000" expanded="true" signature="1849:1872" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/network/network-variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-          <folding>
-            <marker date="1458567532000" expanded="true" signature="676:757" placeholder="${...}" />
-            <marker date="1458567532000" expanded="true" signature="688:756" placeholder="(...)" />
-            <marker date="1458567532000" expanded="true" signature="717:754" placeholder="(...)" />
-            <marker date="1458567532000" expanded="true" signature="1078:1184" placeholder="${...}" />
-            <marker date="1458567532000" expanded="true" signature="1090:1183" placeholder="(...)" />
-            <marker date="1458567532000" expanded="true" signature="1130:1181" placeholder="(...)" />
-            <marker date="1458567532000" expanded="true" signature="1136:1163" placeholder="(...)" />
-            <marker date="1458567532000" expanded="true" signature="1328:1361" placeholder="${...}" />
-            <marker date="1458567532000" expanded="true" signature="1403:1433" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/network-variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <marker date="1458047823000" expanded="true" signature="61:79" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="93:106" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="175:223" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="187:222" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="292:340" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="304:339" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="409:457" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="421:456" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="526:574" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="538:573" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="644:692" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="656:691" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="762:810" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="774:809" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="880:928" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="892:927" placeholder="(...)" />
-            <marker date="1458047823000" expanded="true" signature="998:1046" placeholder="${...}" />
-            <marker date="1458047823000" expanded="true" signature="1010:1045" placeholder="(...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/assume-role-policy.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/app-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1457550843000" expanded="true" signature="50:67" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="97:155" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="109:154" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="180:246" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="189:245" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="195:231" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="206:229" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="358:409" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="367:408" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="431:456" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/vpc-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <marker date="1460011343000" expanded="true" signature="43:75" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="99:147" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="107:146" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="168:186" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="213:231" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="292:309" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="329:347" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="374:392" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="610:651" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="619:650" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="668:712" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="677:711" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="764:781" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="845:872" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="907:925" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="930:944" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="984:1002" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1075:1092" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1114:1139" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1190:1208" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1253:1271" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1313:1331" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1440:1488" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1446:1487" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="1535:1553" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1610:1656" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1618:1655" placeholder="(...)" />
-            <marker date="1460011343000" expanded="true" signature="1715:1733" placeholder="${...}" />
-            <marker date="1460011343000" expanded="true" signature="1795:1831" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/svc-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="31" />
-          <folding>
-            <marker date="1457550843000" expanded="true" signature="47:64" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="94:152" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="106:151" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="177:243" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="186:242" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="192:228" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="203:226" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="355:403" placeholder="${...}" />
-            <marker date="1457550843000" expanded="true" signature="364:402" placeholder="(...)" />
-            <marker date="1457550843000" expanded="true" signature="425:450" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment/dev-6-0/dev-6-0-config.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-          <folding>
-            <marker date="1460428104000" expanded="true" signature="845:876" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="895:929" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="947:981" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="999:1012" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1162:1180" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1194:1207" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1222:1234" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1222:1236" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1268:1299" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1324:1348" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1372:1395" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1421:1446" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1467:1487" placeholder="${...}" />
-            <marker date="1460428104000" expanded="true" signature="1520:1552" placeholder="${...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/ycu/env-variables.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/ycu/consul.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="120" column="38" selection-start-line="120" selection-start-column="38" selection-end-line="120" selection-end-column="38" />
+        <state relative-caret-position="405">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="59" />
           <folding>
             <marker date="1460428104000" expanded="true" signature="53:71" placeholder="${...}" />
             <marker date="1460428104000" expanded="true" signature="291:319" placeholder="${...}" />
@@ -1736,6 +1119,850 @@
             <marker date="1460428104000" expanded="true" signature="3245:3276" placeholder="${...}" />
             <marker date="1460428104000" expanded="true" signature="3306:3360" placeholder="${...}" />
             <marker date="1460428104000" expanded="true" signature="3389:3431" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ych_portal_worker.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460569286000" expanded="true" signature="641:659" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="889:917" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1036:1059" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1177:1200" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1322:1365" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1490:1533" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1658:1701" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1851:1868" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1904:1922" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1965:1983" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2065:2103" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2071:2102" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="2178:2191" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2212:2230" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2256:2279" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2307:2332" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2355:2375" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2410:2442" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2679:2701" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2714:2732" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2766:2813" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2774:2812" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="2829:2876" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2837:2875" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="2909:2947" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2972:3008" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3032:3083" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3040:3082" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3133:3195" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3236:3254" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3411:3429" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3476:3589" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3486:3588" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3493:3541" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3549:3587" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3618:3745" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3628:3744" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3635:3690" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3698:3743" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="3774:3798" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3828:3870" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3874:3920" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3950:4004" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4033:4086" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/env-variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4305">
+          <caret line="287" column="30" selection-start-line="287" selection-start-column="30" selection-end-line="287" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/environment/dev-6-0/dev-6-0-config.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <marker date="1460428104000" expanded="true" signature="845:876" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="895:929" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="947:981" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="999:1012" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1162:1180" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1194:1207" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1222:1234" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1222:1236" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1268:1299" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1324:1348" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1372:1395" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1421:1446" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1467:1487" placeholder="${...}" />
+            <marker date="1460428104000" expanded="true" signature="1520:1552" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/pub-config.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1457550843000" expanded="true" signature="42:59" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="89:147" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="101:146" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="172:238" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="181:237" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="187:223" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="198:221" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="323:340" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="399:429" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="512:555" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="521:554" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="577:602" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/app-config.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1457550843000" expanded="true" signature="50:67" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="97:155" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="109:154" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="180:246" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="189:245" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="195:231" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="206:229" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="358:409" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="367:408" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="431:456" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/consul-haproxy.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3585">
+          <caret line="239" column="92" selection-start-line="239" selection-start-column="92" selection-end-line="239" selection-end-column="92" />
+          <folding>
+            <marker date="1460569286000" expanded="true" signature="61:79" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="306:334" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="455:488" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="612:643" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="642:643" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="763:787" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="907:932" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1052:1077" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1197:1220" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1340:1365" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1489:1547" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1671:1729" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1905:1922" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="1958:1976" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2016:2034" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2799:2852" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2864:2900" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2912:2946" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="2971:3005" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3022:3055" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3177:3195" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3447:3464" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3494:3512" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3552:3570" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3627:3645" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3676:3692" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3676:3698" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3723:3781" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="3921:3960" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4242:4260" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4353:4391" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4359:4390" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="4463:4476" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4497:4515" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4541:4564" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4592:4617" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4640:4660" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4695:4727" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="4978:5000" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5013:5031" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5066:5113" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5074:5112" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5129:5176" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5137:5175" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5209:5247" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5272:5308" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5332:5383" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5340:5382" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5433:5492" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5515:5545" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5589:5607" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5762:5780" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5824:5934" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5834:5933" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5841:5886" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5894:5932" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5963:6087" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="5973:6086" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="5980:6032" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="6040:6085" placeholder="(...)" />
+            <marker date="1460569286000" expanded="true" signature="6116:6140" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="6170:6209" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="6213:6244" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="6274:6328" placeholder="${...}" />
+            <marker date="1460569286000" expanded="true" signature="6357:6407" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/consul-haproxy-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/elasticsearch-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/elasticsearch.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1438">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="630:648" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="762:787" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="887:910" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1010:1033" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1133:1155" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1255:1283" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1383:1408" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1601:1618" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1649:1667" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1706:1724" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1780:1798" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1828:1858" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1883:1925" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2456:2474" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2678:2731" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2743:2778" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2790:2823" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2848:2881" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2898:2930" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3042:3080" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3048:3079" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3151:3164" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3185:3203" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3229:3252" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3280:3305" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3328:3348" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3383:3415" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3484:3502" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3733:3775" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3893:3926" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4040:4063" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4179:4202" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4318:4340" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4456:4484" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4600:4625" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4734:4762" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4971:4988" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5025:5043" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5082:5100" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5283:5313" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5326:5344" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5378:5425" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5386:5424" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5441:5488" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5449:5487" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5521:5559" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5584:5620" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5644:5695" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5652:5694" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5745:5803" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5826:5855" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5897:5915" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6068:6086" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6129:6238" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6139:6237" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6146:6190" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6198:6236" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6267:6390" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6277:6389" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6284:6335" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6343:6388" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6419:6443" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6473:6511" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6541:6595" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6624:6673" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/network-variables.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <marker date="1458047823000" expanded="true" signature="61:79" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="93:106" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="175:223" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="187:222" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="292:340" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="304:339" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="409:457" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="421:456" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="526:574" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="538:573" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="644:692" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="656:691" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="762:810" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="774:809" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="880:928" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="892:927" placeholder="(...)" />
+            <marker date="1458047823000" expanded="true" signature="998:1046" placeholder="${...}" />
+            <marker date="1458047823000" expanded="true" signature="1010:1045" placeholder="(...)" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/svc-config.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="31" />
+          <folding>
+            <marker date="1457550843000" expanded="true" signature="47:64" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="94:152" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="106:151" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="177:243" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="186:242" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="192:228" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="203:226" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="355:403" placeholder="${...}" />
+            <marker date="1457550843000" expanded="true" signature="364:402" placeholder="(...)" />
+            <marker date="1457550843000" expanded="true" signature="425:450" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/vpc-config.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <marker date="1460011343000" expanded="true" signature="43:75" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="99:147" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="107:146" placeholder="(...)" />
+            <marker date="1460011343000" expanded="true" signature="168:186" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="213:231" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="292:309" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="329:347" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="374:392" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="610:651" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="619:650" placeholder="(...)" />
+            <marker date="1460011343000" expanded="true" signature="668:712" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="677:711" placeholder="(...)" />
+            <marker date="1460011343000" expanded="true" signature="764:781" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="845:872" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="907:925" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="930:944" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="984:1002" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1075:1092" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1114:1139" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1190:1208" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1253:1271" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1313:1331" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1440:1488" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1446:1487" placeholder="(...)" />
+            <marker date="1460011343000" expanded="true" signature="1535:1553" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1610:1656" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1618:1655" placeholder="(...)" />
+            <marker date="1460011343000" expanded="true" signature="1715:1733" placeholder="${...}" />
+            <marker date="1460011343000" expanded="true" signature="1795:1831" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/rabbitmq-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="80" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/rabbitmq.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1438">
+          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="615:633" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="842:870" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="980:1008" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1119:1148" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1259:1282" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1393:1417" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1528:1553" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1659:1697" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1819:1836" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1866:1884" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1918:1936" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1987:2005" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2030:2060" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2085:2122" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2126:2166" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2681:2699" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2882:2935" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2947:2977" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2989:3017" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3042:3070" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3087:3114" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3221:3259" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3227:3258" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3325:3338" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3359:3377" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3403:3426" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3454:3479" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3502:3522" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3557:3589" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3660:3678" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3812:3860" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3984:4036" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4060:4077" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4113:4131" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4172:4190" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4256:4274" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4510:4533" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4663:4691" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4827:4855" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4984:5012" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5143:5180" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5326:5343" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5379:5397" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5431:5449" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5670:5700" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5713:5731" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5760:5807" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5768:5806" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5823:5870" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5831:5869" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5903:5941" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5966:6002" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6026:6077" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6034:6076" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6127:6180" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6203:6227" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6270:6288" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6431:6449" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6487:6591" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6497:6590" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6504:6543" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6551:6589" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6620:6738" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6630:6737" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6637:6683" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6691:6736" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6767:6791" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6821:6854" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6858:6898" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6929:6983" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7012:7056" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/reporting-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-628">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/reporting.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="195" column="48" selection-start-line="195" selection-start-column="48" selection-end-line="195" selection-end-column="48" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="729:782" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="794:825" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="837:866" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="891:920" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="937:965" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1083:1101" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1219:1247" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1370:1387" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1417:1435" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1470:1488" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1540:1558" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1584:1614" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1639:1692" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1836:1875" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2175:2193" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2284:2302" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2525:2553" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2678:2716" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2843:2896" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3046:3063" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3099:3117" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3152:3170" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3244:3282" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3250:3281" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3349:3362" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3383:3401" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3427:3450" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3478:3503" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3526:3546" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3581:3613" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3793:3823" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3836:3854" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3884:3931" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3892:3930" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3947:3994" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3955:3993" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4027:4065" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4090:4126" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4150:4201" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4158:4200" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4251:4305" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4328:4353" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4395:4413" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4558:4576" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4615:4720" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4625:4719" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4632:4672" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4680:4718" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4749:4868" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4759:4867" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4766:4813" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4821:4866" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4897:4921" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4951:4985" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4989:5020" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5050:5104" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5133:5178" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/spago-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/spago.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="606:624" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="867:884" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="914:932" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="963:981" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1029:1047" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1138:1160" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1185:1219" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1363:1402" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1702:1720" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1894:1947" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1959:1986" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1998:2023" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2048:2073" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2090:2114" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2218:2256" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2224:2255" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="2319:2332" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2353:2371" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2397:2420" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2448:2473" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2496:2516" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2551:2583" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2659:2677" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2895:2923" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3049:3083" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3210:3244" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3424:3441" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3477:3495" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3526:3544" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3744:3766" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3779:3797" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3823:3870" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3831:3869" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3886:3933" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3894:3932" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3966:4004" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4029:4065" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4089:4140" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4097:4139" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4190:4240" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4263:4284" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4326:4344" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4481:4499" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4534:4635" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4544:4634" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4551:4587" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4595:4633" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4664:4779" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4674:4778" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4681:4724" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4732:4777" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4808:4832" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4862:4892" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4897:4936" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4966:5020" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5049:5090" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ych-openempy-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ych-openempy.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2447">
+          <caret line="216" column="86" selection-start-line="216" selection-start-column="86" selection-end-line="216" selection-end-column="86" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="628:646" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="767:790" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="898:926" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1048:1065" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1095:1113" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1151:1169" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1224:1242" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1271:1301" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1326:1382" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1526:1565" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1860:1878" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2079:2132" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2144:2178" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2190:2222" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2247:2279" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2296:2327" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2439:2477" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2445:2476" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="2547:2560" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2581:2599" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2625:2648" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2676:2701" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2724:2744" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2779:2811" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2879:2897" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3129:3157" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3282:3310" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3436:3477" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3600:3623" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3773:3790" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3826:3844" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3882:3900" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4139:4169" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4182:4200" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4229:4276" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4237:4275" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4292:4339" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4300:4338" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4372:4410" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4435:4471" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4495:4546" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4503:4545" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4596:4653" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4676:4708" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4750:4768" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4915:4933" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4975:5083" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4985:5082" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="4992:5035" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5043:5081" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5112:5234" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5122:5233" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5129:5179" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5187:5232" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="5263:5287" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5317:5354" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5358:5389" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5419:5473" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5502:5550" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ycr-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ycr.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="616:634" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="875:892" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="922:940" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="969:987" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1033:1051" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1071:1093" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1118:1165" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1309:1348" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1492:1531" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1829:1847" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2012:2065" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2077:2102" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2114:2137" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2162:2185" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2202:2224" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2325:2363" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2331:2362" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="2424:2437" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2458:2476" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2502:2525" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2553:2578" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2601:2621" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2656:2688" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2936:2958" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2971:2989" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3009:3056" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3017:3055" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3072:3119" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3080:3118" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3152:3190" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3215:3251" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3275:3326" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3283:3325" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3376:3424" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3447:3466" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3509:3527" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3656:3674" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3707:3806" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3717:3805" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3724:3758" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3766:3804" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3835:3948" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3845:3947" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3852:3893" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3901:3946" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="3977:4001" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4099:4127" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4130:4161" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4192:4246" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4275:4314" placeholder="${...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ycu-direct-elb.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2593">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/ycu/ycu-direct.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+          <folding>
+            <marker date="1460569796000" expanded="true" signature="623:641" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="866:894" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1016:1033" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1063:1081" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1117:1135" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1227:1245" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1479:1507" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1629:1646" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1676:1694" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1739:1757" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1814:1832" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1859:1881" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="1906:1960" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2104:2143" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2458:2476" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2553:2571" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2607:2629" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2654:2717" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="2861:2900" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3215:3233" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3323:3376" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3388:3420" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3432:3462" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3487:3517" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3534:3563" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3762:3780" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3807:3829" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="3854:3908" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4052:4091" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4406:4424" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4497:4515" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4551:4573" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4598:4661" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="4805:4844" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5159:5177" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5264:5282" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5506:5534" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5659:5698" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5821:5844" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="5994:6011" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6047:6065" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6101:6119" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6195:6233" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6201:6232" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6301:6314" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6335:6353" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6379:6402" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6430:6455" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6478:6498" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6533:6565" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6795:6817" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6830:6848" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6875:6922" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6883:6921" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="6938:6985" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="6946:6984" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7018:7056" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7081:7117" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7141:7192" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7149:7191" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7242:7297" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7320:7346" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7350:7385" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7427:7445" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7588:7606" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7646:7752" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7656:7751" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7663:7704" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7712:7750" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7781:7901" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7791:7900" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7798:7846" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7854:7899" placeholder="(...)" />
+            <marker date="1460569796000" expanded="true" signature="7930:7954" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="7983:8033" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="8098:8152" placeholder="${...}" />
+            <marker date="1460569796000" expanded="true" signature="8181:8227" placeholder="${...}" />
           </folding>
         </state>
       </provider>

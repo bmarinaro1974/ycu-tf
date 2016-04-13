@@ -37,7 +37,7 @@ variable "YCH_Portal_Worker_instance_types" {
 
 
 resource "aws_security_group" "YCH_Portal_Worker" {
-    name = "${var.environment_name}-YCH_Portal_Worker"
+    name = "${var.environment}-YCH_Portal_Worker"
         
     ingress {
       from_port = 0
@@ -93,10 +93,10 @@ resource "aws_security_group" "YCH_Portal_Worker" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
-    vpc_id = "${aws_vpc.public.id}"
+    vpc_id = "${aws_vpc.ycu.id}"
     tags {
-        Name        = "${var.environment_name}-YCH_Portal_Worker"
-        Environment = "${var.environment_name}"
+        Name        = "${var.environment}-YCH_Portal_Worker"
+        Environment = "${var.environment}"
     }
 }
 
@@ -118,7 +118,7 @@ resource "aws_autoscaling_group" "YCH_Portal_Worker_group" {
   depends_on = ["aws_internet_gateway.ycu"]
   depends_on = ["aws_autoscaling_group.Consul_group"]
   #depends_on = ["aws_route.public_admin"]
-  vpc_zone_identifier = ["${aws_subnet.public.*.id}"]
+  vpc_zone_identifier = ["${aws_subnet.pub.*.id}"]
   name = "${var.environment}_YCH_Portal_Worker"
   max_size = "${lookup(var.default_asg_max, var.environment)}"
   min_size = "${lookup(var.default_asg_min, var.environment)}"

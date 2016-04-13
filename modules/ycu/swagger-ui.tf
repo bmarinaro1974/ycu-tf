@@ -50,7 +50,7 @@ resource "template_file" "Swagger-UI_user_data" {
 }
 
 resource "aws_launch_configuration" "Swagger-UI_configuration" {
-   name = "${var.environment_name}_Swagger-UI"
+   name = "${var.environment}_Swagger-UI"
    image_id = "${var.ami_ids.Swagger-UI}"
    image_id = "${coalesce(lookup(var.Swagger-UI_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
    instance_type = "${coalesce(lookup(var.Swagger-UI_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"

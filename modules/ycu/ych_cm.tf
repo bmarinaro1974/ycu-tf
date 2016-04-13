@@ -50,7 +50,7 @@ resource "template_file" "YCH_CM_user_data" {
 }
 
 resource "aws_security_group" "YCH_CM" {
-    name = "${var.environment_name}-YCH_CM"
+    name = "${var.environment}-YCH_CM"
         
     ingress {
       from_port = 0
@@ -115,10 +115,10 @@ resource "aws_security_group" "YCH_CM" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
-    vpc_id = "${aws_vpc.public.id}"
+    vpc_id = "${aws_vpc.ycu.id}"
     tags {
-        Name        = "${var.environment_name}-YCH_CM"
-        Environment = "${var.environment_name}"
+        Name        = "${var.environment}-YCH_CM"
+        Environment = "${var.environment}"
     }
 }
 
@@ -126,7 +126,7 @@ resource "aws_autoscaling_group" "YCH_CM_group" {
   depends_on = ["aws_internet_gateway.ycu"]
   depends_on = ["aws_autoscaling_group.Consul_group"]
   #depends_on = ["aws_route.public_admin"]
-  vpc_zone_identifier = ["${aws_subnet.public.*.id}"]
+  vpc_zone_identifier = ["${aws_subnet.pub.*.id}"]
   name = "${var.environment}_YCH_CM"
   max_size = "${lookup(var.default_asg_max, var.environment)}"
   min_size = "${lookup(var.default_asg_min, var.environment)}"
@@ -149,7 +149,7 @@ resource "aws_launch_configuration" "YCH_CM_configuration" {
   image_id              = "${coalesce(lookup(var.YCH_CM_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
   instance_type         = "${coalesce(lookup(var.YCH_CM_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"
   key_name              = "${var.instance_key_name}"
-  security_groups       = ["${aws_security_group.YCH_CM.id}", "${aws_security_group.consul-enabled-public_security_group.id}"]
+  security_groups       = ["${aws_security_group.YCH_CM.id}", "${aws_security_group.consul.id}"]
   iam_instance_profile  = "${aws_iam_instance_profile.microservices_profile.name}"
   user_data             = "${template_file.YCH_CM_user_data.rendered}"
 }

@@ -50,7 +50,7 @@ resource "template_file" "ETL_user_data" {
 }
 
 resource "aws_security_group" "ETL" {
-    name = "${var.environment_name}-ETL"
+    name = "${var.environment}-ETL"
 
     ingress {
         from_port   = 22
@@ -75,8 +75,8 @@ resource "aws_security_group" "ETL" {
 
     vpc_id = "${aws_vpc.ycu.id}"
     tags {
-        Name        = "${var.environment_name}-ETL"
-        Environment = "${var.environment_name}"
+        Name        = "${var.environment}-ETL"
+        Environment = "${var.environment}"
     }
 }
 

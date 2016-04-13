@@ -35,8 +35,85 @@ variable "Reporting_instance_types" {
   }
 }
 
+variable "dns_elb_Reporting" {
+  default = {
+    record = "dev-6-0-Reporting-elb.app"
+    type = "A"
+  }
+}
+
+resource "aws_route53_record" "Reporting-elb" {
+  zone_id = "${var.existing_route53_zones.yourcareuniverse_net_id}"
+  name = "${var.dns_elb_Reporting.record}"
+  type = "${var.dns_elb_Reporting.type}"
+
+  alias {
+    name = "${aws_elb.Reporting.dns_name}"
+    zone_id = "${aws_elb.Reporting.zone_id}"
+    evaluate_target_health = false
+  }
+}
+
+
+resource "aws_security_group" "Reporting_elb_security_group" {
+  name = "${var.environment}-Reporting-elb"
+
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks =  ["${var.workspaces_cidr_block}"]
+
+  }
+
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  vpc_id = "${aws_vpc.ycu.id}"
+  tags {
+    Name        = "${var.environment}-Reporting-elb"
+    Environment = "${var.environment}"
+  }
+}
+
+resource "aws_elb" "Reporting" {
+  name = "${var.environment}-Reporting"
+  subnets = ["${aws_subnet.application.*.id}"]
+  security_groups = ["${aws_security_group.Reporting_elb_security_group.id}"]
+
+  listener {
+    instance_port = 8983
+    instance_protocol = "https"
+    lb_port = 443
+    lb_protocol = "https"
+    ssl_certificate_id = "${var.elb_certs.developmentCertificate}"
+  }
+
+  health_check {
+    healthy_threshold = 2
+    unhealthy_threshold = 2
+    timeout = 5
+    target = "HTTPS:8983/yca/index.html"
+    interval = 10
+  }
+
+  cross_zone_load_balancing = true
+  idle_timeout = 60
+  connection_draining = true
+  connection_draining_timeout = 300
+
+  tags {
+    Name = "${var.environment}-Reporting"
+  }
+}
+
+
 resource "aws_security_group" "Reporting_security_group" {
-    name = "${var.environment_name}-Reporting"
+    name = "${var.environment}-Reporting"
         
     ingress {
       from_port = 0
@@ -73,10 +150,10 @@ resource "aws_security_group" "Reporting_security_group" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
-    vpc_id = "${aws_vpc.application.id}"
+    vpc_id = "${aws_vpc.ycu.id}"
     tags {
-        Name        = "${var.environment_name}-Reporting"
-        Environment = "${var.environment_name}"
+        Name        = "${var.environment}-Reporting"
+        Environment = "${var.environment}"
     }
 }
 
@@ -120,7 +197,7 @@ resource "aws_launch_configuration" "Reporting_configuration" {
   image_id              = "${coalesce(lookup(var.Reporting_ami_ids, var.environment), lookup(var.default_ami_ids, var.environment))}"
   instance_type         = "${coalesce(lookup(var.Reporting_instance_types, var.environment), lookup(var.default_instance_types, var.environment))}"
   key_name              = "${var.instance_key_name}"
-  security_groups       = ["${aws_security_group.Reporting.id}", "${aws_security_group.consul-enabled-application_security_group.id}"]
+  security_groups       = ["${aws_security_group.Reporting.id}", "${aws_security_group.consul.id}"]
   iam_instance_profile  = "${aws_iam_instance_profile.microservices_profile.name}"
   user_data             = "${template_file.Reporting_user_data.rendered}"
 }
